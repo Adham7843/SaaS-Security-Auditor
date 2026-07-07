@@ -1,0 +1,50 @@
+# SaaS-Security-Auditor — Default Configuration
+# See brands/_template/brand.yaml for per-brand override.
+
+severity_threshold: low          # Minimum severity to report: critical, high, medium, low, info
+timeout_seconds: 300             # Per-scanner timeout
+skip_fix: false                  # Skip auto-fix attempts
+output_dir: "output/reports"     # Report output directory
+
+# Scanner categories to enable (all by default)
+enabled_categories:
+  - dependencies
+  - configuration
+  - authentication
+  - cors_headers
+  - secrets
+  - ssl_tls
+
+# Network check settings
+network:
+  user_agent: "SaaS-Security-Auditor/1.0"
+  request_timeout: 10
+  follow_redirects: true
+
+# Reporting
+reporting:
+  formats: ["markdown", "json", "html"]
+  include_evidence: true
+  max_evidence_length: 500
+
+# Exclusion patterns (files/dirs to skip during source scanning)
+exclude:
+  dirs:
+    - .git
+    - __pycache__
+    - node_modules
+    - .venv
+    - venv
+    - dist
+    - build
+    - .eggs
+  files:
+    - "*.pyc"
+    - "*.pyo"
+    - "*.so"
+    - "*.dll"
+    - "*.exe"
+    - "*.jpg"
+    - "*.png"
+    - "*.svg"
+  max_file_size_kb: 1024

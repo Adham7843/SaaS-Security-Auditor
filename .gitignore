@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.user
+
+# Project
+output/reports/
+output/fixes/
+data/scans/
+data/fixes/
+data/reports/
+
+# Brand secrets (brands may contain .env files)
+brands/*/.env
+brands/*/.env.local
