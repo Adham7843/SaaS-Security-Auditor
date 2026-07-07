@@ -34,7 +34,16 @@ SAAS_Businesses/
     │   └── default.yaml           ← Global defaults
     ├── pipelines/
     │   └── scan_pipeline.py       ← (Coming soon) Full CI/CD pipeline
-    └── opencode.json              ← Opencode agent config with 3 sub-agents
+    ├── agents/
+    │   ├── distribution-classifier/ ← Classifies & routes security findings
+    │   │   ├── AGENT.md
+    │   │   ├── opencode.json
+    │   │   ├── classifiers/         ← Severity/category/brand classifiers
+    │   │   └── distributors/        ← GitHub/Slack/report distributors
+    │   └── spec-designer/          ← Security specification engine (OPSX)
+    │       ├── AGENT.md
+    │       └── opencode.json
+    └── opencode.json              ← Opencode agent config with 5 sub-agents
 ```
 
 ## Data Flow
@@ -62,6 +71,29 @@ ScanResult (vulnerabilities list)
     ├── ReportEngine.generate_markdown()  → output/reports/{brand}-scan.md
     ├── ReportEngine.generate_json()      → output/reports/{brand}-scan.json
     └── ReportEngine.generate_html()      → output/reports/{brand}-scan.html
+    │
+    ▼ (optional)
+scripts/classify_results.py       ← Distribution Classifier
+    │
+    ├── Severity classification → priority + SLA
+    ├── Category classification → fixer assignment
+    └── Brand classification    → brand queue
+    │
+    ▼ (optional)
+scripts/distribute_findings.py   ← Distribution Router
+    │
+    ├── GitHub Issue Distributor → creates issues per vuln
+    ├── Slack Alert Distributor  → sends urgent alerts
+    └── Report Distributor       → distribution manifest
+    │
+    ▼ (optional)
+agents/spec-designer/            ← Spec Designer (OPSX workflow)
+    │
+    ├── /sec:explore  → Investigate security concerns
+    ├── /sec:propose  → Create remediation specs
+    ├── /sec:apply    → Implement fixes
+    ├── /sec:archive  → Close completed changes
+    └── /sec:sync     → Update security playbook
     │
     ▼ (optional)
 FixEngine.fix_all()

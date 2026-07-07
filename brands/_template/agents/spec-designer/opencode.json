@@ -1,0 +1,34 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "brand-spec-designer": {
+      "mode": "primary",
+      "model": "opencode/deepseek-v4-flash-free",
+      "temperature": 0.0,
+      "steps": 100,
+      "permission": {
+        "read": {
+          "brands/{{BRAND_DIR}}/*": "allow",
+          "output/reports/{{BRAND_NAME}}-scan.*": "allow",
+          "*": "deny"
+        },
+        "edit": {
+          "brands/{{BRAND_DIR}}/src/*": "allow",
+          "brands/{{BRAND_DIR}}/brand.yaml": "allow",
+          "brands/{{BRAND_DIR}}/docs/*": "allow",
+          "*": "deny"
+        },
+        "bash": {
+          "python scripts/run_scan* --name {{BRAND_NAME}}*": "allow",
+          "*": "deny"
+        },
+        "grep": { "brands/{{BRAND_DIR}}/*": "allow", "*": "deny" },
+        "glob": { "brands/{{BRAND_DIR}}/*": "allow", "*": "deny" },
+        "doom_loop": "deny"
+      },
+      "prompt": "{file:./AGENT.md}",
+      "description": "Spec Designer for {{BRAND_NAME}} — scoped security specs",
+      "hidden": true
+    }
+  }
+}

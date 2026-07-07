@@ -1,0 +1,27 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "distribution-classifier": {
+      "mode": "primary",
+      "model": "opencode/deepseek-v4-flash-free",
+      "temperature": 0.0,
+      "steps": 100,
+      "permission": {
+        "read": { "*": "allow" },
+        "edit": { "output/reports/*": "allow" },
+        "bash": {
+          "python scripts/classify_results*": "allow",
+          "python scripts/distribute_findings*": "allow",
+          "*": "ask"
+        },
+        "grep": { "*": "allow" },
+        "glob": { "*": "allow" },
+        "webfetch": { "*": "deny" },
+        "doom_loop": "deny"
+      },
+      "prompt": "{file:./AGENT.md}",
+      "description": "Distribution Classifier — classify and route security findings",
+      "color": "#E74C3C"
+    }
+  }
+}

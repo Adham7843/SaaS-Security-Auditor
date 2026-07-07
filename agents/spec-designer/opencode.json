@@ -1,0 +1,49 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "spec-designer": {
+      "mode": "primary",
+      "model": "opencode/deepseek-v4-flash-free",
+      "fallback_chain": [
+        "opencode/gpt-5-nano"
+      ],
+      "temperature": 0.0,
+      "steps": 150,
+      "permission": {
+        "read": {
+          "brands/*": "allow",
+          "output/reports/*": "allow",
+          "src/*": "allow",
+          "config/*": "allow",
+          "*": "ask"
+        },
+        "edit": {
+          "brands/*/src/*": "allow",
+          "brands/*/brand.yaml": "allow",
+          "brands/*/spec-designer/*": "allow",
+          "*": "deny"
+        },
+        "write": {
+          "brands/*/spec-designer/*": "allow",
+          "brands/*/docs/*": "allow",
+          "*": "deny"
+        },
+        "bash": {
+          "python scripts/run_scan*": "allow",
+          "python scripts/run_fix*": "allow",
+          "python scripts/classify_results*": "allow",
+          "*": "ask"
+        },
+        "grep": { "brands/*": "allow", "*": "deny" },
+        "glob": { "brands/*": "allow", "src/*": "allow", "*": "deny" },
+        "skill": { "*": "allow" },
+        "tool": { "*": "deny" },
+        "task": { "explorer": "allow", "general": "allow", "*": "deny" },
+        "doom_loop": "ask"
+      },
+      "prompt": "{file:./AGENT.md}",
+      "description": "Spec Designer — turn security findings into structured specs, plans, and tasks",
+      "color": "#8E44AD"
+    }
+  }
+}

@@ -73,19 +73,46 @@ python scripts/run_scan.py my-new-brand --url https://my-new-brand.com
 | HTML | `output/reports/{brand}-scan.html` | Dashboard view |
 | Summary | `output/reports/_summary.md` | Multi-brand overview |
 
-## Opencode Agent
+## Agents
 
-Run via Opencode:
+| Agent | Command | Purpose |
+|-------|---------|---------|
+| **SaaS Security Auditor** | `opencode run --agent saas-security-auditor` | Main agent — scan, fix, report |
+| **Distribution Classifier** | `opencode run --agent distribution-classifier` | Classify & route findings to channels |
+| **Spec Designer** | `opencode run --agent spec-designer` | Design security specs & remediation plans |
+
+### Distribution Classifier
+
+After a scan, classify and route findings:
 
 ```bash
-opencode --agent saas-security-auditor
+# Classify by severity/category/brand
+python scripts/classify_results.py output/reports/my-brand-scan.json
+
+# Route critical findings to Slack + GitHub
+python scripts/distribute_findings.py output/reports/my-brand-classified.json --channels slack github
 ```
 
-Then use prompts like:
-- _"Scan all brands and show me critical findings"_
-- _"Check my-brand for hardcoded secrets before we deploy"_
-- _"Auto-fix config issues on my-brand and create a summary report"_
+### Spec Designer (OPSX for Security)
+
+Turn findings into structured specs:
+
+```bash
+/sec:explore "What's the risk of weak JWT secrets in brand-x?"
+/sec:propose "JWT secret rotation for brand-x"
+/sec:apply "JWT secret rotation for brand-x"
+/sec:archive "JWT secret rotation for brand-x"
+/sec:sync "JWT secret rotation for brand-x"
+```
+
+Every brand automatically gets its own scoped spec-designer agent when initialized:
+
+```bash
+python scripts/init_brand.py brands/my-brand --url https://my-brand.com
+```
+
+This creates `brands/my-brand/agents/spec-designer/` with a brand-scoped agent.
 
 ---
 
-**Built by Mothra Harnesses 🦋**
+**Built by Mothra Harnesses**

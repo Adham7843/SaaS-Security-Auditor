@@ -60,6 +60,8 @@ python scripts/run_scan.py my-new-brand --url https://my-new-brand.com
 |-------|---------|
 | `@saas-scanner` | Runs scans only (read-only on brands) |
 | `@saas-fixer` | Applies auto-fixes (cannot run scans) |
+| `@distribution-classifier` | Classifies & routes findings to GitHub/Slack/reports |
+| `@spec-designer` | Designs security remediation specs using OPSX workflow |
 
 ## Example Prompts
 
@@ -69,6 +71,9 @@ python scripts/run_scan.py my-new-brand --url https://my-new-brand.com
 "Scan my-brand and auto-fix any config issues found"
 "Run a full scan on all brands and generate an HTML dashboard"
 "What CVEs apply to the dependencies used in my-brand?"
+"Classify the latest scan for brand-x and route critical findings to Slack"
+"Design a spec for rotating the JWT secret across all brands"
+"Initialize a new brand: python scripts/init_brand.py brands/my-brand --url https://my-brand.com"
 ```
 
 ## Output Files

@@ -1,21 +1,21 @@
 # brand.yaml — Template for a SaaS brand configuration
-# 
-# To add a new brand:
-#   1. Copy this folder: cp -r brands/_template brands/your-brand-name
-#   2. Edit brand.yaml with your brand's details
-#   3. Run the scanner: python scripts/run_scan.py your-brand-name --url https://app.yourbrand.com
 #
-# For folder-based scanning:
-#   Place the brand's source code in brands/your-brand-name/src/ or
-#   point target_dir to the absolute path.
+# To add a new brand:
+#   1. Copy this folder: cp -r brands/_template brands/your-brand
+#   2. Edit brand.yaml with your brand's details
+#   3. Run: python scripts/init_brand.py brands/your-brand
+#      This will auto-deploy the spec-designer agent for this brand
+#   4. Run the scanner: python scripts/run_scan.py your-brand --url https://app.yourbrand.com
 
 name: "Your Brand Name"
 
 # Target URL for live scanning (HTTP headers, SSL, etc.)
 target_url: "https://app.yourbrand.com"
 
+# Directory name (auto-detected from folder)
+dir: ""
+
 # Optional: path to source code for static analysis
-# target_dir: "brands/your-brand-name/src"
 target_dir: ""
 
 # Severity threshold: critical, high, medium, low, info
@@ -42,4 +42,10 @@ env_vars:
 # Additional brand-specific custom checks
 custom_checks:
   enabled: false
-  # Define custom check scripts in brands/your-brand-name/checks/
+
+# ---- AUTO-DEPLOYED AGENTS ----
+# These agents are deployed automatically when init_brand.py runs:
+agents:
+  spec-designer:
+    enabled: true
+    description: "Security spec designer for this brand"

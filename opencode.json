@@ -85,6 +85,57 @@
       "mcps": [],
       "hidden": true,
       "description": "Fixer sub-agent — applies auto-fixes"
+    },
+    "distribution-classifier": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "variant": "medium",
+      "system_prompt": "{file:./agents/distribution-classifier/AGENT.md}",
+      "permissions": {
+        "read": { "*": "allow" },
+        "edit": { "output/reports/*": "allow" },
+        "bash": {
+          "python scripts/classify_results*": "allow",
+          "python scripts/distribute_findings*": "allow",
+          "*": "ask"
+        },
+        "grep": { "*": "allow" },
+        "glob": { "*": "allow" },
+        "doom_loop": "deny"
+      },
+      "mcps": ["filesystem"],
+      "description": "Distribution Classifier — classify and route security findings"
+    },
+    "spec-designer": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "variant": "high",
+      "system_prompt": "{file:./agents/spec-designer/AGENT.md}",
+      "fallback_chain": ["opencode/gpt-5-nano"],
+      "permissions": {
+        "read": {
+          "brands/*": "allow",
+          "output/reports/*": "allow",
+          "src/*": "allow",
+          "config/*": "allow",
+          "*": "ask"
+        },
+        "edit": {
+          "brands/*/src/*": "allow",
+          "brands/*/brand.yaml": "allow",
+          "*": "deny"
+        },
+        "bash": {
+          "python scripts/run_scan*": "allow",
+          "python scripts/run_fix*": "allow",
+          "python scripts/classify_results*": "allow",
+          "*": "ask"
+        },
+        "grep": { "brands/*": "allow", "*": "deny" },
+        "glob": { "brands/*": "allow", "src/*": "allow", "*": "deny" },
+        "doom_loop": "ask"
+      },
+      "mcps": ["filesystem", "websearch"],
+      "skills": [],
+      "description": "Spec Designer — turn security findings into structured specs and tasks"
     }
   },
   "mcps": {
