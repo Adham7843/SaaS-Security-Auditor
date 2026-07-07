@@ -56,12 +56,12 @@ python scripts/run_scan.py my-new-brand --url https://my-new-brand.com
 
 ## Available Sub-Agents
 
-| Agent | Purpose |
-|-------|---------|
-| `@saas-scanner` | Runs scans only (read-only on brands) |
-| `@saas-fixer` | Applies auto-fixes (cannot run scans) |
-| `@distribution-classifier` | Classifies & routes findings to GitHub/Slack/reports |
-| `@spec-designer` | Designs security remediation specs using OPSX workflow |
+| Agent | Purpose | Deployable |
+|-------|---------|------------|
+| `@saas-scanner` | Runs scans only (read-only on brands) | Yes (stdlib) |
+| `@saas-fixer` | Applies auto-fixes (cannot run scans) | Yes (stdlib) |
+| `@distribution-classifier` | Classifies & routes findings | Yes — see `agents/distribution-classifier/DELIVERY-MANIFEST.md` |
+| `@spec-designer` | Designs security remediation specs | Yes — see `agents/spec-designer/DELIVERY-MANIFEST.md` |
 
 ## Example Prompts
 

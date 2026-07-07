@@ -136,6 +136,40 @@
       "mcps": ["filesystem", "websearch"],
       "skills": [],
       "description": "Spec Designer — turn security findings into structured specs and tasks"
+    },
+    "design-factory": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "variant": "high",
+      "system_prompt": "{file:./agents/design-factory/AGENT.md}",
+      "permissions": {
+        "read": { "*": "allow" },
+        "edit": { "brands/*": "allow", "agents/design-factory/*": "allow" },
+        "write": { "brands/*/docs/*": "allow", "brands/*/DESIGN.md": "allow" },
+        "bash": { "*": "ask" },
+        "grep": { "*": "allow" },
+        "glob": { "*": "allow" },
+        "skill": { "*": "allow" },
+        "doom_loop": "ask"
+      },
+      "skills": {
+        "sources": [
+          { "path": "./agents/design-factory/.opencode/skills", "recursive": true }
+        ],
+        "enable": [
+          "shape", "clarify", "distill", "colorize", "typeset", "layout",
+          "critique", "polish", "impeccable", "ui-ux-pro-max",
+          "ckm-design", "ckm-brand", "ckm-ui-styling", "ckm-design-system",
+          "gsap-plugins", "gsap-react", "gsap-scrolltrigger", "gsap-timeline",
+          "motion-framer", "react-spring-physics", "ui-animation",
+          "threejs-webgl", "react-three-fiber", "babylonjs-engine",
+          "copywriting", "ui-design", "ui-audit", "typography-audit",
+          "app-initializer", "docs-writing", "presentation-creator",
+          "modern-web-design", "animate"
+        ]
+      },
+      "mcps": ["filesystem", "websearch"],
+      "description": "Design Factory — senior web designer with 60+ skills",
+      "color": "#9B59B6"
     }
   },
   "mcps": {

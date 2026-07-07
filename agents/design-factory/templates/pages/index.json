@@ -1,0 +1,187 @@
+{
+  "prompts": [
+    {
+      "slug": "high-contrast-landing-page",
+      "title": "High Contrast Landing Page",
+      "description": "A high-contrast Swiss-style minimalist design system utilizing brutalist typography and editorial layouts. Characterized by a neutral palette of off-whites, deep blacks, and monochromatic grays, this style emphasizes rhythmic patterns through stacked text 'echo' effects and asymmetrical grids. Ideal for luxury travel, architecture portfolios, high-end fashion, and premium editorial content where typography acts as the primary visual driver.",
+      "tags": ["landing page", "style"],
+      "previewUrl": "https://p.superdesign.dev/draft/a3c23226-7c14-401b-ae7a-fe78e2dcd300",
+      "viewCount": 75282,
+      "remixCount": 1401
+    },
+    {
+      "slug": "brutalist-e-commerce-page",
+      "title": "Brutalist E-commerce Page",
+      "description": "A brutalist editorial e-commerce style guide inspired by poster-campaign aesthetics. Characterized by massive grotesque typography (Clash Display), soft-blurred gradient forms in red-orange tones (#DB4A2B, #F8A348), and a warm cream background (#E4E2DD). This aesthetic is optimized for high-end fashion, architecture, or lifestyle brands that want a 'poster-first' digital presence.",
+      "tags": ["ecommerce", "landing page", "style", "orange accent"],
+      "previewUrl": "https://p.superdesign.dev/draft/da34d4ac-cb7e-4391-af07-ec9085970f46",
+      "viewCount": 20127,
+      "remixCount": 865
+    },
+    {
+      "slug": "brutalist-style-ecommerce-page",
+      "title": "Brutalist Style Ecommerce Page",
+      "description": "A brutalist editorial design system for high-fashion, streetwear, or luxury brands. Featuring a raw, industrial aesthetic with massive typography, high-contrast photography, and utilitarian components.",
+      "tags": ["ecommerce", "landing page", "style", "orange accent"],
+      "previewUrl": "https://p.superdesign.dev/draft/10ecb2c3-19d7-405b-926e-3fa74e142661",
+      "viewCount": 12901,
+      "remixCount": 498
+    },
+    {
+      "slug": "saas-landing-page-for-developer-tool",
+      "title": "SaaS Landing Page for Developer Tool",
+      "description": "A bold modernist design system inspired by exhibition poster aesthetics and technical documentation. Characterized by a high-contrast 'cream and cobalt' color palette, oversized aggressive typography, and a rigid 12-column grid layout with 1px border dividers.",
+      "tags": ["landing page", "style", "page", "blue accent", "light mode"],
+      "previewUrl": "https://p.superdesign.dev/draft/a8f544ea-ba22-4214-ade4-4cbd56118443",
+      "viewCount": 12168,
+      "remixCount": 636
+    },
+    {
+      "slug": "superdesign-editorial-waitlist",
+      "title": "Superdesign Editorial Waitlist",
+      "description": "Editorial waiting list landing page with a cinematic, high-fashion aesthetic. Features a deep matte #181818 background, warm beige #EBDCC4 typography, and a brutalist yet refined grid.",
+      "tags": ["style", "waitlist", "landing page"],
+      "previewUrl": "https://p.superdesign.dev/draft/7f390f1f-3d3d-4b30-a8b2-669a9c6c0e3b",
+      "viewCount": 9539,
+      "remixCount": 363
+    },
+    {
+      "slug": "luxury-focused-design-system",
+      "title": "Luxury-focused Design System",
+      "description": "A refined, editorial-style design system characterized by heavy geometric sans-serif typography, a sophisticated dusty rose and charcoal palette, and staggered grid layouts.",
+      "tags": ["landing page", "style", "cream", "pink accent"],
+      "previewUrl": "https://p.superdesign.dev/draft/f24844d8-b7a3-4d28-98c8-fbb61c82c313",
+      "viewCount": 11787,
+      "remixCount": 687
+    },
+    {
+      "slug": "lumina-saas-landing-page",
+      "title": "Lumina SaaS Landing Page",
+      "description": "Lumina is a high-energy, Neo-Brutalist B2C SaaS design characterized by its bold #ffe17c yellow primary color, heavy 2px black borders, and zero-blur hard shadows.",
+      "tags": ["bold", "energetic", "yellow", "style", "landing page", "saas landing"],
+      "previewUrl": "https://p.superdesign.dev/draft/7c559ec1-83bb-46c6-bd4b-3e0cf404de62",
+      "viewCount": 12332,
+      "remixCount": 1151
+    },
+    {
+      "slug": "bold-editorial-style",
+      "title": "Bold Editorial Style",
+      "description": "A high-contrast, editorial-style SaaS landing page design optimized for designers and creative tools. It features bold Anton display typography, a sophisticated palette of golden yellow (#ffe17c) and deep charcoal (#171e19).",
+      "tags": ["light mode", "editorial", "yellow", "navy", "sage", "waitlist", "landing page", "saas landing", "acid yellow accent", "style"],
+      "previewUrl": "https://p.superdesign.dev/draft/3a225447-518b-4e0d-99ae-fd9504b34b59",
+      "viewCount": 9070,
+      "remixCount": 500
+    },
+    {
+      "slug": "bold-editorial-design-style",
+      "title": "Bold Editorial Design Style",
+      "description": "A premium, bold editorial design system characterized by high-contrast brutalist typography and a sophisticated dark navy and sage color palette.",
+      "tags": ["navy", "sage", "portfolio", "landing page", "style"],
+      "previewUrl": "https://p.superdesign.dev/draft/98723433-9ef9-4e9d-af7a-9d206bd08034",
+      "viewCount": 9839,
+      "remixCount": 402
+    },
+    {
+      "slug": "super-shampoo-high-conversion-lp",
+      "title": "Super Shampoo - High Conversion LP",
+      "description": "A premium, high-conversion e-commerce style guide optimized for D2C beauty and wellness brands. Features a sophisticated 'clinical luxury' aesthetic with a palette of sage green (#E2E8E4), off-white beige (#F5F5F0), and deep charcoal (#1C1C1C).",
+      "tags": ["ecommerce", "shopify", "landing page"],
+      "previewUrl": "https://p.superdesign.dev/draft/583e67e8-8910-4632-a91c-43fdca36ead7",
+      "viewCount": 2540,
+      "remixCount": 121
+    },
+    {
+      "slug": "archive-and-form-updated-hero-image",
+      "title": "Archive & Form - Updated Hero Image",
+      "description": "An editorial, museum-grade furniture catalog design system with an 'Archive & Form' aesthetic. Featuring a warm minimalist color palette of off-white and charcoal, it utilizes a sophisticated pairing of Zodiak serif and General Sans typography.",
+      "tags": ["shopify", "ecommerce", "layout", "landing page"],
+      "previewUrl": "https://p.superdesign.dev/draft/757f007d-1094-4588-af95-3a4b8058e087",
+      "viewCount": 1350,
+      "remixCount": 23
+    },
+    {
+      "slug": "laboratory-skincare",
+      "title": "Laboratory Skincare",
+      "description": "Laboratory Skincare is a warm academic, methodical design system inspired by research journals and clinical lab notebooks. It features a grid-based, disciplined layout with generous white space and a restrained color palette.",
+      "tags": ["landing page", "shopify", "ecommerce", "layout"],
+      "previewUrl": "https://p.superdesign.dev/draft/6127f422-5c2f-4daa-96cd-c77133bc241b",
+      "viewCount": 1780,
+      "remixCount": 61
+    },
+    {
+      "slug": "terroir-or-natural-wine-boutique",
+      "title": "TERROIR | Natural Wine Boutique",
+      "description": "A high-end, dark-mode editorial design system inspired by boutique natural wine tasting rooms. Features a moody palette of charcoal, burgundy, and sage, anchored by the Cormorant Garamond serif and Manrope sans-serif.",
+      "tags": ["landing page", "shopify", "layout"],
+      "previewUrl": "https://p.superdesign.dev/draft/ee2df213-4905-4af3-b068-74ee0b4aa401",
+      "viewCount": 1332,
+      "remixCount": 24
+    },
+    {
+      "slug": "aura-regimen-studio",
+      "title": "Aura Regimen Studio",
+      "description": "A calm, deliberately designed wellness and e-commerce landing page featuring editorial typography and a soft natural color palette. The aesthetic is focused on trust and clarity.",
+      "tags": ["shopify", "landing page", "layout"],
+      "previewUrl": "https://p.superdesign.dev/draft/dd4293be-78a6-4b34-845c-4230adcdd474",
+      "viewCount": 1334,
+      "remixCount": 56
+    },
+    {
+      "slug": "aura-audio-showroom",
+      "title": "Aura Audio Showroom",
+      "description": "Product Walkthrough is a product-first electronics landing page built around a Showroom Flow layout—product theater followed by guided model selection.",
+      "tags": ["shopify", "landing page", "ecommerce"],
+      "previewUrl": "https://p.superdesign.dev/draft/f2edfa16-019a-4b31-aff7-cdc84599a226",
+      "viewCount": 2147,
+      "remixCount": 140
+    },
+    {
+      "slug": "header-and-hero-layout-refinement",
+      "title": "Header & Hero Layout Refinement",
+      "description": "A brutalist streetwear design system characterized by heavy editorial typography, a high-contrast neutral palette (concrete and ink), and asymmetric layouts.",
+      "tags": ["shopify", "landing page", "ecommerce", "layout"],
+      "previewUrl": "https://p.superdesign.dev/draft/7d25a4cc-c30e-48b7-a282-7384de4bfeed",
+      "viewCount": 2052,
+      "remixCount": 89
+    },
+    {
+      "slug": "mosaic-grid-architecture-style",
+      "title": "Mosaic Grid Architecture Style",
+      "description": "An architectural, technical-blueprint style design system featuring a minimalist mosaic grid, forest green (#1A3C2B) and light-gray paper-textured (#F7F7F5) palette.",
+      "tags": ["neutral", "low contrast", "forestgreen accent", "cream accent", "industrial", "minimal", "saas landing", "ai first product", "style", "landing page"],
+      "previewUrl": "https://p.superdesign.dev/draft/d920e8cf-1030-472b-92cc-5bf9453149b5",
+      "viewCount": 26155,
+      "remixCount": 1218
+    },
+    {
+      "slug": "futuristic-sass-landing-page",
+      "title": "Futuristic SasS Landing Page",
+      "description": "A modern, atmospheric SaaS design system featuring a high-contrast blend of dark mode hero sections and light mode content areas. Characterized by glassmorphism, sophisticated serif-sans typography pairing, and ethereal glows.",
+      "tags": ["landing page", "page", "style", "webapp", "techfoward", "futuristic", "indigo accent", "purple accent"],
+      "previewUrl": "https://p.superdesign.dev/draft/f1a6e57e-72c0-4056-a07a-e594abad3f7c",
+      "viewCount": 12133,
+      "remixCount": 572
+    },
+    {
+      "slug": "aura-os-launch-manifesto",
+      "title": "Aura OS - Launch Manifesto",
+      "description": "An editorial, typography-heavy design system mimicking a high-end magazine or manifesto. Features high-contrast serif and grotesk font pairings, asymmetric layouts, and a sophisticated dark-mode palette with cream accents.",
+      "tags": ["dark-navy-charcoal", "ivory accent", "gold accent", "high contrast", "editorial", "manifesto tone", "product launch", "narrative vertical", "launch", "landing page"],
+      "previewUrl": "https://p.superdesign.dev/draft/72529f38-3729-401f-b41d-ab9ba49d3d1e",
+      "viewCount": 1592,
+      "remixCount": 41
+    },
+    {
+      "slug": "gen-z-social-app",
+      "title": "Gen-Z Social App",
+      "description": "A high-energy, Gen-Z-inspired design system with a 'Neo-Brutalist' aesthetic. This style features high-saturation colors like acid green (#ccff00), vibrant purple (#7000ff), and hot pink (#ff0099), paired with heavy black borders and hard shadows.",
+      "tags": ["acid lime accent", "high contrast", "neon accents", "bold", "mobile app", "landing page", "high conversion page", "gen z", "waitlist", "loud", "meme", "brutalist", "energetic"],
+      "previewUrl": "https://p.superdesign.dev/draft/7a346eef-fefc-432d-9d91-17470daf90ed",
+      "viewCount": 2146,
+      "remixCount": 142
+    }
+  ],
+  "total": 20,
+  "source": "superdesign CLI --tags landing page",
+  "fetched": "2026-04-21"
+}

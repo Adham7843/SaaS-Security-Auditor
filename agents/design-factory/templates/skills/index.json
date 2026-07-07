@@ -1,0 +1,27 @@
+{
+  "description": "Full prompts for Superdesign animation skill templates",
+  "source": "superdesign CLI --slugs <slug> --json",
+  "prompts": [
+    {
+      "slug": "animation-product-release-demo",
+      "title": "Animation / Product Release Demo",
+      "description": "Use this to deliver product launch animation based on real UI",
+      "tags": ["skill", "animation"],
+      "previewUrl": null
+    },
+    {
+      "slug": "animation-threejs-animation",
+      "title": "Animation / Threejs animation",
+      "description": "Three.js animation - keyframe animation, skeletal animation, morph targets, animation mixing.",
+      "tags": ["skill", "animation"],
+      "previewUrl": null
+    },
+    {
+      "slug": "sgw-enhanced-modal-interaction",
+      "title": "SGW - Enhanced Modal Interaction",
+      "description": "Increase the height of the submit button. Make it larger and more prominent.",
+      "tags": ["animation", "border effect", "card", "hover effect", "image gallery", "landing page"],
+      "previewUrl": "https://draft-eeff8827-4fa7-43a4-8463-4624fd578e74.preview.superdesign.dev"
+    }
+  ]
+}

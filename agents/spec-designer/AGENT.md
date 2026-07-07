@@ -4,6 +4,7 @@
 **Source:** `Automations_Dev/agents/spec-designer/`
 **Inspired by:** OpenSpec OPSX Workflow
 **Auto-Deploys to:** Every new SaaS brand in `brands/`
+**Deployable:** YES — `DELIVERY-MANIFEST.md` included. Copy to any project.
 
 ---
 

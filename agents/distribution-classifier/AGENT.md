@@ -3,6 +3,7 @@
 **Role:** Security Vulnerability Classifier & Distribution Engine
 **Source:** `My_Systems/Distribution_Classifier_Factory/`
 **Purpose:** Classifies security scan findings by severity, type, and brand, then distributes them to the right remediation channels.
+**Deployable:** YES — `DELIVERY-MANIFEST.md` included. Copy to any project.
 
 ---
 

@@ -115,4 +115,21 @@ This creates `brands/my-brand/agents/spec-designer/` with a brand-scoped agent.
 
 ---
 
-**Built by Mothra Harnesses**
+## Deployability
+
+All agents and pipelines in this project are **deployable to any other project**. Each comes with a `DELIVERY-MANIFEST.md`:
+
+| Component | Manifest |
+|-----------|----------|
+| **Full Pipeline** | `pipelines/DELIVERY-MANIFEST.md` |
+| **Distribution Classifier** | `agents/distribution-classifier/DELIVERY-MANIFEST.md` |
+| **Spec Designer** | `agents/spec-designer/DELIVERY-MANIFEST.md` |
+
+To deploy any component to another project:
+1. Copy the component directory
+2. Register in the target project's `opencode.json`
+3. Run it — **zero external dependencies** (stdlib only)
+
+---
+
+**Built for Mothra Harnesses deployment pipeline**

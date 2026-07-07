@@ -1,0 +1,547 @@
+{
+  "prompts": [
+    {
+      "slug": "high-contrast-landing-page",
+      "title": "High Contrast Landing Page",
+      "description": "A high-contrast Swiss-style minimalist design system utilizing brutalist typography and editorial layouts. Characterized by a neutral palette of off-whites, deep blacks, and monochromatic grays, this style emphasizes rhythmic patterns through stacked text 'echo' effects and asymmetrical grids. Ideal for luxury travel, architecture portfolios, high-end fashion, and premium editorial content where typography acts as the primary visual driver.",
+      "tags": ["landing page", "style"],
+      "previewUrl": "https://p.superdesign.dev/draft/a3c23226-7c14-401b-ae7a-fe78e2dcd300",
+      "viewCount": 75282,
+      "remixCount": 1401
+    },
+    {
+      "slug": "news-print",
+      "title": "News Print",
+      "description": "This style is an ode to the golden age of print journalism, reimagined for the web",
+      "tags": ["style"],
+      "previewUrl": "https://component-c17fbb26-e97b-49b2-9747-24ecb0a18ec4.preview.superdesign.dev/?projectId=5ca7c2aa-7d65-46b9-98d6-75d821b786ac",
+      "viewCount": 72840,
+      "remixCount": 249
+    },
+    {
+      "slug": "brutalist-e-commerce-page",
+      "title": "Brutalist E-commerce Page",
+      "description": "A brutalist editorial e-commerce style guide inspired by poster-campaign aesthetics. Characterized by massive grotesque typography (Clash Display), soft-blurred gradient forms in red-orange tones (#DB4A2B, #F8A348), and a warm cream background (#E4E2DD). This aesthetic is optimized for high-end fashion, architecture, or lifestyle brands that want a 'poster-first' digital presence. Features include scroll-triggered entrance animations, mix-blend-mode interactions, and a clean, borderless grid structure.",
+      "tags": ["ecommerce", "landing page", "style", "orange accent"],
+      "previewUrl": "https://p.superdesign.dev/draft/da34d4ac-cb7e-4391-af07-ec9085970f46",
+      "viewCount": 20126,
+      "remixCount": 865
+    },
+    {
+      "slug": "brutalist-style-ecommerce-page",
+      "title": "Brutalist Style Ecommerce Page",
+      "description": "A brutalist editorial design system for high-fashion, streetwear, or luxury brands. Featuring a raw, industrial aesthetic with massive typography, high-contrast photography, and utilitarian components. Key elements include a noise-grain texture overlay, a monochromatic palette with burnt orange and neon green accents, and asymmetrical layout grids. The style uses 'Clash Grotesk' for aggressive impact and 'General Sans' for technical clarity. Ideal for product launches, lookbooks, and fashion portfolios looking for a 'Raw Campaign' or 'Modern Brutalist' feel with scroll-triggered visual impact.",
+      "tags": ["ecommerce", "landing page", "style", "orange accent"],
+      "previewUrl": "https://p.superdesign.dev/draft/10ecb2c3-19d7-405b-926e-3fa74e142661",
+      "viewCount": 12900,
+      "remixCount": 498
+    },
+    {
+      "slug": "saas-landing-page-for-developer-tool",
+      "title": "SaaS Landing Page for Developer Tool",
+      "description": "A bold modernist design system inspired by exhibition poster aesthetics and technical documentation. Characterized by a high-contrast 'cream and cobalt' color palette, oversized aggressive typography, and a rigid 12-column grid layout with 1px border dividers. This style is ideal for technical SaaS, developer tools, high-end design agencies, or architectural portfolios. Key elements include tight line-heights (0.85), no rounded corners, and a unique vertical labeling system in a dedicated left-hand grid column.",
+      "tags": ["landing page", "style", "page", "blue accent", "light mode"],
+      "previewUrl": "https://p.superdesign.dev/draft/a8f544ea-ba22-4214-ade4-4cbd56118443",
+      "viewCount": 12168,
+      "remixCount": 636
+    },
+    {
+      "slug": "superdesign-editorial-waitlist",
+      "title": "Superdesign Editorial Waitlist",
+      "description": "Editorial waiting list landing page with a cinematic, high-fashion aesthetic. Features a deep matte #181818 background, warm beige #EBDCC4 typography, and a brutalist yet refined grid. Key elements include oversized edge-to-edge display type, subtle noise textures, and a layered text depth effect. Ideal for luxury tech, creative agency portfolios, high-end SaaS tools, architecture firms, and invite-only exclusivity campaigns. Layout utilizes strong typographic hierarchy and generous negative space with accent tones in coral, rust, and sage.",
+      "tags": ["style", "waitlist", "landing page"],
+      "previewUrl": "https://p.superdesign.dev/draft/7f390f1f-3d3d-4b30-a8b2-669a9c6c0e3b",
+      "viewCount": 9539,
+      "remixCount": 363
+    },
+    {
+      "slug": "luxury-focused-design-system",
+      "title": "Luxury-focused Design System",
+      "description": "A refined, editorial-style design system characterized by heavy geometric sans-serif typography, a sophisticated dusty rose and charcoal palette, and staggered grid layouts. This aesthetic is optimized for high-end luxury services, boutique hospitality, premium fashion brands, or architectural portfolios. It features scroll-triggered reveal animations, grayscale-to-color image transitions, and a 'glassmorphism' navigation bar. The layout focuses on massive, bold headlines paired with hyper-minimalist utility text, creating a contrast that feels modern yet timeless.",
+      "tags": ["landing page", "style", "cream", "pink accent"],
+      "previewUrl": "https://p.superdesign.dev/draft/f24844d8-b7a3-4d28-98c8-fbb61c82c313",
+      "viewCount": 11787,
+      "remixCount": 687
+    },
+    {
+      "slug": "babybites-sophisticated-palette",
+      "title": "BabyBites - Sophisticated Palette",
+      "description": "BabyBites style guide featuring a sophisticated high-contrast palette of dark charcoal, vibrant red, and sage-green. Characterized by playful but professional editorial typography, oversized rounded corners (up to 40px), and a clean, card-based layout. Ideal for parenting, nutrition, healthcare, and educational SaaS platforms. Includes scroll-triggered animations and custom view transitions for fluid mobile-first navigation.",
+      "tags": ["mobile app", "style"],
+      "previewUrl": "https://p.superdesign.dev/draft/24a95c14-3a85-492f-b2d5-9c64023f4836",
+      "viewCount": 11466,
+      "remixCount": 675
+    },
+    {
+      "slug": "lumina-saas-landing-page",
+      "title": "Lumina SaaS Landing Page",
+      "description": "Lumina is a high-energy, Neo-Brutalist B2C SaaS design characterized by its bold #ffe17c yellow primary color, heavy 2px black borders, and zero-blur hard shadows. It utilizes a striking combination of 'Cabinet Grotesk' for display-heavy typography and 'Satoshi' for body copy. This style is ideal for the creator economy, modern fintech, edtech, or any startup looking to break the 'clean corporate blue' mold with a confident, high-contrast interface. The layout features bento-style grids, marquee animations, and playful asymmetric card shapes.",
+      "tags": ["bold", "energetic", "yellow", "style", "landing page", "saas landing"],
+      "previewUrl": "https://p.superdesign.dev/draft/7c559ec1-83bb-46c6-bd4b-3e0cf404de62",
+      "viewCount": 12331,
+      "remixCount": 1151
+    },
+    {
+      "slug": "bold-editorial-style",
+      "title": "Bold Editorial Style",
+      "description": "A high-contrast, editorial-style SaaS landing page design optimized for designers and creative tools. It features bold Anton display typography, a sophisticated palette of golden yellow (#ffe17c) and deep charcoal (#171e19), and a structured layout combining grid patterns and bento-box feature blocks. This style is characterized by aggressive visual hierarchy, oversized headlines, and a minimalist yet punchy aesthetic suitable for high-velocity startups, fintech, or creative agency portfolios.",
+      "tags": ["light mode", "editorial", "yellow", "navy", "sage", "waitlist", "landing page", "saas landing", "acid yellow accent", "style"],
+      "previewUrl": "https://p.superdesign.dev/draft/3a225447-518b-4e0d-99ae-fd9504b34b59",
+      "viewCount": 9070,
+      "remixCount": 500
+    },
+    {
+      "slug": "bold-editorial-design-style",
+      "title": "Bold Editorial Design Style",
+      "description": "A premium, bold editorial design system characterized by high-contrast brutalist typography and a sophisticated dark navy and sage color palette. Optimized for creative agencies, design portfolios, luxury architecture, and high-end digital studios. Features include 'Anton' display headers, a custom crosshair cursor, floating ambient gradients, asymmetric masonry layouts, and smooth scroll-triggered reveal animations. The aesthetic balances minimalist white space with massive, impactful type and subtle micro-interactions like mix-blend-mode navigation and grayscale-to-color image transitions.",
+      "tags": ["navy", "sage", "portfolio", "landing page", "style"],
+      "previewUrl": "https://p.superdesign.dev/draft/98723433-9ef9-4e9d-af7a-9d206bd08034",
+      "viewCount": 9839,
+      "remixCount": 402
+    },
+    {
+      "slug": "mosaic-grid-architecture-style",
+      "title": "Mosaic Grid Architecture Style",
+      "description": "An architectural, technical-blueprint style design system featuring a minimalist mosaic grid, forest green (#1A3C2B) and light-gray paper-textured (#F7F7F5) palette. Optimized for B2B SaaS, developer tools, and high-end agency portfolios. Key features include editorial typography with Space Grotesk, JetBrains Mono labels, bento grid layouts, and 2D flat wireframe aesthetics with zero shadows.",
+      "tags": ["neutral", "low contrast", "forestgreen accent", "cream accent", "industrial", "minimal", "saas landing", "ai first product", "style", "landing page"],
+      "previewUrl": "https://p.superdesign.dev/draft/d920e8cf-1030-472b-92cc-5bf9453149b5",
+      "viewCount": 26155,
+      "remixCount": 1218
+    },
+    {
+      "slug": "futuristic-sass-landing-page",
+      "title": "Futuristic SasS Landing Page",
+      "description": "A modern, atmospheric SaaS design system featuring a high-contrast blend of dark mode hero sections and light mode content areas. Characterized by glassmorphism, sophisticated serif-sans typography pairing, and ethereal glows, it is ideal for AI startups, design tools, creative portfolios, and premium digital platforms. The style emphasizes depth through backdrop blurs, subtle borders (1px), and smooth micro-interactions like scroll-triggered navigation and hover-based transforms.",
+      "tags": ["landing page", "page", "style", "webapp", "techfoward", "futuristic", "indigo accent", "purple accent"],
+      "previewUrl": "https://p.superdesign.dev/draft/f1a6e57e-72c0-4056-a07a-e594abad3f7c",
+      "viewCount": 12133,
+      "remixCount": 572
+    },
+    {
+      "slug": "softly-digital-wellness-app",
+      "title": "Softly - Digital Wellness App",
+      "description": "A soft-aesthetic, Gen-Z oriented design system optimized for wellness, meditation, journaling, and lifestyle brands. Features a warm off-white foundation (#FDFCF8) layered with soft pastel accents (Coral #FFB7B2, Sage #E8EFE8, Lavender #EFEDF4), grain-textured overlays, and a mix of modern geometric sans-serif ('Outfit') and organic handwriting ('Reenie Beanie') typography. The layout emphasizes breathing room, gentle scroll-triggered reveals, and 'floating' organic shapes to reduce cognitive load and evoke a sense of calm.",
+      "tags": ["mobile app", "sass landing", "leads generation", "waitlist", "wellness product", "lifestyle app", "stone gray", "peach blush", "style", "landing page"],
+      "previewUrl": "https://p.superdesign.dev/draft/b745951a-6967-484c-b575-e94e92a6b94d",
+      "viewCount": 14115,
+      "remixCount": 1123
+    },
+    {
+      "slug": "chrome-extension-landing-page",
+      "title": "Chrome Extension Landing Page",
+      "description": "A browser-native developer tool aesthetic characterized by a 'system interface' look rather than a marketing landing page. This style features a light-neutral base with a vibrant cyan (#06B6D4) accent, mimicking the layout of Chrome DevTools or a workspace IDE. It uses a combination of Inter for primary readability and JetBrains Mono for technical labels and commands. Suitable for SaaS, developer tools, extensions, and technical platforms requiring a high-density, utility-focused layout with scroll-triggered panel reveals and simulated interactive environments.",
+      "tags": ["chrome extension", "landing page", "gray", "high contrast", "browser native", "developer tool", "minimalist", "macos", "chrome", "teal accent", "blue accent", "sass landing", "style", "product launch"],
+      "previewUrl": "https://p.superdesign.dev/draft/95042290-b1e0-4e07-b82c-97067b6aa457",
+      "viewCount": 9030,
+      "remixCount": 402
+    },
+    {
+      "slug": "neon-velocity-countdown",
+      "title": "Neon Velocity Countdown",
+      "description": "A high-velocity, futuristic dark-mode design system characterized by neon accents, brutalist typography, and 3D glassmorphism. Featuring a 'Laser Green' and 'Navy Black' palette, it utilizes 'Plus Jakarta Sans' for high-impact headlines and 'Geist Mono' for technical metadata. This aesthetic is ideal for high-growth tech startups, SaaS platforms, developer tools, and fintech products that want to convey speed, precision, and cutting-edge innovation. The layout uses a bento-grid structure, fluid typography, and sophisticated scroll-triggered reveal animations.",
+      "tags": ["product launch", "style", "landing page", "high conversion page", "waitlist"],
+      "previewUrl": "https://p.superdesign.dev/draft/28f49947-e9f9-46a7-86e2-97b9f2c7bb36",
+      "viewCount": 15290,
+      "remixCount": 509
+    },
+    {
+      "slug": "minimalist-beta-capture",
+      "title": "Minimalist Beta Capture",
+      "description": "A high-end 'Editorial Brutalist' style guide optimized for SaaS waitlists, fintech, or premium developer tools. It features a dark-mode palette (#080808), high-contrast monochromatic typography (DM Serif Display + Geist Mono), and sophisticated glassmorphism. The layout utilizes a bento-grid structure and fluid width (92vw) with oversized hero typography. Key features include scroll-triggered slide-up animations, a silver-metallic gradient system, and a persistent floating mobile navigation bar.",
+      "tags": ["high conversion page", "landing page", "product launch", "waitlist", "style"],
+      "previewUrl": "https://p.superdesign.dev/draft/ace14be0-7bef-49c3-bdc1-c13fd975c283",
+      "viewCount": 11484,
+      "remixCount": 522
+    },
+    {
+      "slug": "disruptor-beta-launch",
+      "title": "Disruptor Beta Launch",
+      "description": "A high-impact Neo-Brutalist design system designed for product launches and disruptive SaaS platforms. Characterized by stark color contrasts, industrial typography, and heavy geometric borders. The aesthetic utilizes a dark mode base (#121212) punctuated by vibrant 'Volt' accents (#CCFF00) and crisp white containers. Key features include 'sticker-style' rotated elements, massive display type, solid 8px offsets (Neo-shadows), and vertical navigation elements. Ideal for high-growth tech, developer tools, fintech, and creative agencies looking for an aggressive, authoritative, and innovative brand presence.",
+      "tags": ["product launch", "waitlist", "high conversion page", "landing page", "style"],
+      "previewUrl": "https://p.superdesign.dev/draft/2931c676-3a53-48b2-89c8-cc32e4f38e67",
+      "viewCount": 8271,
+      "remixCount": 289
+    },
+    {
+      "slug": "architectural-type-system-style",
+      "title": "Architectural Type System Style",
+      "description": "A high-contrast, architectural design system rooted in Swiss Modernism and Brutalist minimalism. Characterized by a monochrome palette, massive 'Inter Tight' display typography, and a rigid grid defined by 0.5px hairlines. Features a technical 'JetBrains Mono' font for metadata and system status indicators, creating an engineering-first aesthetic. Suitable for high-end SaaS, developer tools, fintech, architecture portfolios, and design agencies. Includes a persistent noise overlay for texture and grid-based layouts that utilize viewport-relative sizing for maximalist impact.",
+      "tags": ["landing page", "product launch", "waitlist", "high conversion page", "style"],
+      "previewUrl": "https://p.superdesign.dev/draft/474a435f-abf5-4135-a64e-0c415d175b91",
+      "viewCount": 7860,
+      "remixCount": 249
+    },
+    {
+      "slug": "neural-noir-interface-style",
+      "title": "Neural Noir Interface Style",
+      "description": "The Neural Noir Interface Style is a high-end, futuristic aesthetic characterized by a 'tech-noir' atmosphere. It blends deep dark backgrounds (#0a0a0a) with sophisticated gold and bronze accents (#a78b71, #e8d5b7) and editorial typography. Key features include glassmorphism, neural network-inspired SVG connection lines, and a bento-grid layout. This style is optimized for premium AI platforms, creative design engines, high-end SaaS, and editorial-driven tech portfolios. It utilizes a combination of sleek sans-serif (Inter) for functional elements and elegant serif italics (Playfair Display) for headlines, creating a contrast between high-tech performance and classic sophistication.",
+      "tags": ["landing page", "page", "style"],
+      "previewUrl": "https://draft-3fb83fbd-a6f3-44a0-af74-b3afca0b7682.preview.superdesign.dev",
+      "viewCount": 10995,
+      "remixCount": 611
+    },
+    {
+      "slug": "deep-red-style-5b01cb",
+      "title": "Deep Red Style",
+      "description": "A deep red/orange atmospheric gradients, elegant serif typography, and complex scroll-triggered animations, with floating parallax cards and a dot-grid background.",
+      "tags": ["style", "page"],
+      "previewUrl": "https://component-9930e9a0-b26d-4609-912b-2c24eb68242e.preview.superdesign.dev/?projectId=908334a5-8fe7-4473-9bfe-d76e2cf11e7e",
+      "viewCount": 21848,
+      "remixCount": 1251
+    },
+    {
+      "slug": "cinematic-style",
+      "title": "Cinematic Style",
+      "description": "A high-end 'Cinematic' design system characterized by deep-space dark backgrounds, sophisticated 3D CSS transforms, and bold editorial typography. Optimized for premium portfolios, creative agencies, fintech, and high-tech SaaS. It features a signature 3D rolodex/cube hero section, glassmorphism elements, and smooth GSAP-driven scroll parallax. Key aesthetics include 'mix-blend-difference' navigation, vibrant neon gradients (cyan to pink), and a monochromatic 'Aspekta' font foundation with heavy weights and tight tracking.",
+      "tags": ["landing page", "page", "style"],
+      "previewUrl": "https://component-640a611e-0067-41ab-bb5d-6d7e627e20ff.preview.superdesign.dev/?projectId=ff174ba6-e0bf-4211-82aa-78c988d79618",
+      "viewCount": 31460,
+      "remixCount": 714
+    },
+    {
+      "slug": "nature-inspired-style",
+      "title": "Nature Inspired Style",
+      "description": "A nature-inspired 'Organic Brutalist' design system perfect for wellness, sustainable CPG, eco-friendly lifestyle brands, or high-end nutrition. Characterized by a palette of deep forest greens and earthy sages, the style utilizes massive editorial typography (Anton) paired with functional sans-serifs (Inter). The layout features 'bento-adjacent' rounded grids, floating organic elements with parallax effects, and a subtle film grain noise overlay that gives the digital experience a tactile, premium paper-like feel. Key elements include oversized headings, ultra-rounded corners (up to 5rem), and fluid reveal animations.",
+      "tags": ["landing page", "page", "style"],
+      "previewUrl": "https://component-1b908311-3be0-4947-9d88-769d1950b9d6.preview.superdesign.dev/?projectId=e533c4ed-045d-482e-8f30-a3e17066428e",
+      "viewCount": 20638,
+      "remixCount": 724
+    },
+    {
+      "slug": "midnight-editorial-style-5f0a22",
+      "title": "Midnight Editorial Style",
+      "description": "A premium, ultra-modern dark aesthetic featuring deep black backgrounds (#050505), massive 'Satoshi' typography for impact, and striking coral (#FF6B50) accents. Designed for high-end agencies and portfolios that prioritize storytelling and visual drama.",
+      "tags": ["landing page", "page", "style"],
+      "previewUrl": "https://component-fd7824aa-041a-4b80-9447-60e1f2383c37.preview.superdesign.dev/?projectId=3cd61f6a-603d-4bcd-975e-793a92a52e5d",
+      "viewCount": 33726,
+      "remixCount": 620
+    },
+    {
+      "slug": "bold-editorial-studio-style",
+      "title": "Bold Editorial Studio Style",
+      "description": "Bold Editorial Studio Style is a high-impact, minimalist design system characterized by massive typography, a strict monochromatic palette, and sophisticated micro-interactions. It features a signature 'editorial' look using ultra-large display fonts (up to 12vw), custom cursor logic, and fluid marquee animations. Ideal for creative agencies, high-end portfolios, fashion brands, and premium fintech products, the system leverages white space and motion to create a premium, curated feel. Key elements include mix-blend-mode navigation, staggered text reveals, and asymmetrical image containers with varied border radii.",
+      "tags": ["landing page", "page", "style"],
+      "previewUrl": "https://component-78740b9d-a825-44a1-ac81-51da434278a3.preview.superdesign.dev/?projectId=51fdec48-7e6b-401c-9d80-e02a20cdeb5f",
+      "viewCount": 16406,
+      "remixCount": 781
+    },
+    {
+      "slug": "midnight-editorial-style",
+      "title": "Midnight Editorial Style",
+      "description": "A high-contrast, midnight-themed editorial design system optimized for premium portfolios, fintech SaaS, and luxury brand storytelling. Characterized by oversized 'Clash Display' typography, a deep #050505 background, and sophisticated mix-blend-mode interactions. Features smooth reveal animations, subtle atmospheric glows, and a brutalist yet refined layout that prioritizes whitespace and typographic hierarchy.",
+      "tags": ["style", "landing page", "page"],
+      "previewUrl": "https://component-aa87d2f6-4a4a-41bd-8c5e-582d92333ed8.preview.superdesign.dev/?projectId=d26d2c78-1cbd-43c0-897a-dbfe5900f98e",
+      "viewCount": 8121,
+      "remixCount": 320
+    },
+    {
+      "slug": "cinematic-noir-style",
+      "title": "Cinematic Noir Style",
+      "description": "A high-end 'Cinematic Noir' design system characterized by dramatic dark-mode aesthetics, high-contrast editorial typography, and immersive scroll-driven parallax effects. Suitable for creative agencies, luxury fashion, fintech, and high-end portfolios. Features include grain overlays, radial gradients with subtle warm tints, and brutalist-scale headings that blur the line between digital interface and cinematic experience.",
+      "tags": ["landing page", "page", "style"],
+      "previewUrl": "https://component-7121e835-54cd-4d01-98d8-95715596de25.preview.superdesign.dev/?projectId=a73b42e8-e7d4-4f03-9af3-c48202c9c063",
+      "viewCount": 14725,
+      "remixCount": 385
+    },
+    {
+      "slug": "kinetic-orange-style",
+      "title": "Kinetic Orange Style",
+      "description": "A high-energy brutalist design system characterized by a high-contrast 'Kinetic Orange' (#FF4D00) and black palette. It features bold, oversized editorial typography, technical monospace accents, and rhythmic motion through marquees and rotating elements. Ideal for creative agencies, fintech, modern portfolios, or AI-driven startups looking for a 'loud' and confident brand presence.",
+      "tags": ["landing page", "style", "page"],
+      "previewUrl": "https://component-9bba597a-d171-450b-b5d0-a3a737433136.preview.superdesign.dev/?projectId=ec2b1de3-b029-4906-8c2d-20af7b4d3f80",
+      "viewCount": 19912,
+      "remixCount": 956
+    },
+    {
+      "slug": "glassmorphism-style",
+      "title": "Glassmorphism Style",
+      "description": "A high-tech glassmorphism design system featuring neon lime accents, deep obsidian surfaces, and a sophisticated blend of architectural grid patterns and organic glowing gradients. Optimized for high-end SaaS, AI product studios, and fintech platforms, this style uses JetBrains Mono for a developer-centric feel and Space Grotesk for bold, editorial headings. Key elements include backdrop-blur effects (glassmorphism), grain/noise overlays, and a 'floating shell' layout that gives the web interface a premium, app-like quality.",
+      "tags": ["landing page", "page", "style"],
+      "previewUrl": "https://component-8ba9a623-981c-49ae-8ce7-679d477ef084.preview.superdesign.dev/?projectId=2608e791-2517-49e6-a626-52728c221d59",
+      "viewCount": 134765,
+      "remixCount": 988
+    },
+    {
+      "slug": "red-noir-style",
+      "title": "Red Noir Style",
+      "description": "A bold, dark-themed landing page featuring high-contrast red accents, glassmorphism, and smooth scroll animations. Designed for AI and tech products with a futuristic aesthetic.",
+      "tags": ["style", "landing page", "page"],
+      "previewUrl": "https://component-4739694a-be35-4493-bdef-f43fd1d095ec.preview.superdesign.dev/?projectId=c636c30f-5d52-41e7-a197-20eb42f1c72d",
+      "viewCount": 52002,
+      "remixCount": 1133
+    },
+    {
+      "slug": "warm-industrial-gray-style",
+      "title": "Warm Industrial Gray Style",
+      "description": "A sophisticated warm industrial aesthetic that blends brutalist grid structures with editorial typography. Featuring a primary palette of warm concrete gray and rich charcoal accented by electric blue, this style is ideal for AI startups, creative technology studios, fintech platforms, and architecture portfolios. It utilizes a high-contrast pairing of heavy grotesque sans-serifs and elegant serif italics, layered over a subtle film grain noise texture. Key features include scroll-triggered reveals, magnetic hover states, and structural grid-line overlays that emphasize a 'form follows function' technical philosophy.",
+      "tags": ["page", "landing page", "style"],
+      "previewUrl": "https://component-a46ada4e-ce09-4f5b-a5b8-04542e5c0af0.preview.superdesign.dev/?projectId=ba2c7920-c443-4e29-8f65-91edc6cc72db",
+      "viewCount": 107744,
+      "remixCount": 422
+    },
+    {
+      "slug": "neo-brutalism-style",
+      "title": "Neo-Brutalism Style",
+      "description": "A high-impact Neo-Brutalist design system characterized by 'Acid' aesthetics. It features high-contrast color palettes (off-white, deep black, and neon yellow), heavy-weight typography, and 'hard' UI elements like non-blurred shadows and thick borders. The layout utilizes bento grids, oversized display text, and dynamic marquee components. Suitable for creative agencies, experimental e-commerce, fintech, and portfolio sites looking for a 'loud', digital-first brand identity.",
+      "tags": ["page", "landing page", "style"],
+      "previewUrl": "https://component-1c76921c-a946-4613-b0f7-46285265389f.preview.superdesign.dev/?projectId=8b004ae9-3926-444c-9209-e6d30cb9236f",
+      "viewCount": 71235,
+      "remixCount": 400
+    },
+    {
+      "slug": "dark-avant-garde-style",
+      "title": "Dark Avant-Garde Style",
+      "description": "A dark avant-garde design system termed 'Digital Naturalism,' characterized by a sophisticated interplay between deep charcoal surfaces and high-energy acid green accents. Featuring editorial serif typography paired with clean sans-serif UI, the style utilizes Brutalist-inspired elements like serrated edges, skewed 'tab' navigation, and grainy noise overlays. Ideal for high-end design agencies, AI masterclasses, editorial portfolios, and premium fintech brands seeking a bold, technical, yet organic aesthetic.",
+      "tags": ["landing page", "page", "style"],
+      "previewUrl": "https://component-78ae4f2a-c55a-4f50-a0b1-17c67e8c277d.preview.superdesign.dev/?projectId=73c75e75-d290-43fd-a5fb-e73cc96eee4b",
+      "viewCount": 39449,
+      "remixCount": 323
+    },
+    {
+      "slug": "cyber-serif-style",
+      "title": "Cyber Serif Style",
+      "description": "A high-end 'Cyber Serif' aesthetic blending classical editorial typography with futuristic tech elements. Features a deep #050505 dark mode palette, neon emerald accents (#10b981), glassmorphism, and sophisticated micro-interactions. Suitable for high-end AI SaaS, creative agencies, fintech portfolios, and developer tools. Includes WebGL-inspired background effects, spotlight hover cards, and staggered scroll-reveal animations.",
+      "tags": ["style", "landing page", "page"],
+      "previewUrl": "https://component-4a04a7c3-74ae-413c-a504-e727a63c9960.preview.superdesign.dev/?projectId=0a04dcd4-8049-425e-9839-27eff4259d82",
+      "viewCount": 65047,
+      "remixCount": 397
+    },
+    {
+      "slug": "organic-modern-style",
+      "title": "Organic Modern Style",
+      "description": "An organic modern design system blending editorial typography with tactile textures and high-end minimalism. It features a sophisticated palette of cream, charcoal, and sage, utilizing 'DM Serif Display' for a classic yet contemporary feel. Key characteristics include heavy use of negative space, hand-drawn annotations, noise-textured backgrounds, and smooth transitions from grayscale to color. Ideal for high-end boutique agencies, AI-driven product startups, luxury lifestyle brands, and design studios.",
+      "tags": ["style"],
+      "previewUrl": "https://component-614e0b67-c42f-4ba2-9151-e6e650714496.preview.superdesign.dev/?projectId=cdd038d4-1b4e-4d75-86fd-cec49f1b852e",
+      "viewCount": 12441,
+      "remixCount": 199
+    },
+    {
+      "slug": "red-sun",
+      "title": "Red sun",
+      "description": "A sophisticated editorial-style design system named 'Red Sun', characterized by a high-contrast 'Coral and Ink' color palette. This style blends 'Instrument Serif' for high-impact typography with 'Manrope' for technical precision. Features include bento-grid layouts, glassmorphism navigation, scroll-triggered animations with subtle rotations, and soft ambient background blurs. Ideal for premium SaaS, creative agencies, AI product design tools, and fintech platforms looking for a balance between warmth and authority.",
+      "tags": ["landing page", "page", "style"],
+      "previewUrl": "https://component-ef333f5b-2ffb-4e78-9732-ec52dce4387e.preview.superdesign.dev/?projectId=bff2e6bc-2152-42f8-b6fb-7bb5d87b48ce",
+      "viewCount": 15349,
+      "remixCount": 383
+    },
+    {
+      "slug": "clean-fluid",
+      "title": "Clean fluid",
+      "description": "A high-end, editorial design system blending luxury serif typography with technical monospace accents. Characterized by fluid 'premium ease' animations, a sophisticated cream and dark charcoal palette (#fcfbf9, #171717), and organic curved transitions. Optimized for AI startups, design studios, fintech dashboards, and luxury tech brands requiring a balance of intelligence and elegance. Key features include scroll-triggered reveal animations, mesh gradient backgrounds, and a signature concave wave transition between sections.",
+      "tags": ["landing page", "style", "page"],
+      "previewUrl": "https://component-eb313858-074f-4348-adcb-3e63ee5c4663.preview.superdesign.dev/?projectId=2406a21e-d8d9-49ab-9c20-e875eb674788",
+      "viewCount": 67515,
+      "remixCount": 490
+    },
+    {
+      "slug": "glassmorphism-card",
+      "title": "Glassmorphism card",
+      "description": "A premium, high-tech glassmorphism design system characterized by deep translucent layers, dark-to-light transitions, and editorial typography. Featuring a 'Superdesign' aesthetic, it utilizes heavy background blurs, grain textures, and emerald accents. This style is ideal for SaaS, AI platforms, fintech, and high-end design agencies requiring a sophisticated, futuristic feel with bento-grid layouts and fluid animations.",
+      "tags": ["landing page", "page", "style"],
+      "previewUrl": "https://component-1da3d31c-59bc-43d5-88b8-7cf7a488fd38.preview.superdesign.dev/?projectId=20a66f4d-9a92-40c1-9e71-8ef65a61a26e",
+      "viewCount": 27971,
+      "remixCount": 815
+    },
+    {
+      "slug": "tech-editorial",
+      "title": "Tech Editorial",
+      "description": "A high-end 'Tech Editorial' aesthetic that merges brutalist precision with classic editorial sophistication. It features a muted, paper-like color palette (#f7f6f2), a structured grid-line system, and a unique pairing of high-contrast Serif (Playfair Display) for display headers and technical Mono (Space Mono) for functional UI. The style is characterized by scroll-triggered text reveals, glassmorphism navigation, and 'scan-line' animations that suggest a sophisticated AI-driven process. Ideal for high-tech SaaS, AI research labs, design agencies, and premium fintech platforms.",
+      "tags": ["landing page", "style", "page"],
+      "previewUrl": "https://component-287dad7e-9177-4879-9d82-fe75a4a7e350.preview.superdesign.dev/?projectId=941209db-331a-45ba-9ec7-d8fb122d8edd",
+      "viewCount": 10926,
+      "remixCount": 320
+    },
+    {
+      "slug": "synapse",
+      "title": "Synapse",
+      "description": "A high-performance 'neural' dark mode design system characterized by deep black backgrounds (#030303), vibrant neon accents in violet (#8B5CF6) and cyan (#06B6D4), and a sophisticated blend of editorial serif typography (Instrument Serif) with functional sans-serif (Inter). The style utilizes glassmorphism, animated mesh gradients, and 'shimmer' text effects to evoke a sense of advanced intelligence, encryption, and institutional-grade technology. Ideal for Fintech, AI, Cybersecurity, and Web3 verticals where speed, security, and technical sophistication are core values.",
+      "tags": ["landing page", "page", "style"],
+      "previewUrl": "https://component-4a21ea9b-938c-461e-ab42-63e07585d9ea.preview.superdesign.dev/?projectId=20ba74cd-5fb9-44d4-8796-f60249006ed9",
+      "viewCount": 11805,
+      "remixCount": 540
+    },
+    {
+      "slug": "bold-retro-modernism",
+      "title": "Bold Retro-Modernism",
+      "description": "A high-impact 'Bold Retro-Modernism' design system characterized by a vibrant primary color palette (Retro Red, Vintage Blue, Sunny Yellow), heavy editorial typography, and brutalist-inspired layout elements. It features massive display text, offset borders, and a mix of grayscale and high-saturation imagery. This style is ideal for luxury fashion, high-end lifestyle brands, avant-garde editorial platforms, or design-focused e-commerce. It uses tight leading (line-height) and tracking (letter-spacing) to create a dense, authoritative aesthetic.",
+      "tags": ["style"],
+      "previewUrl": "https://component-8fd68427-ebe4-47db-8045-184c2bcc0e0c.preview.superdesign.dev/?projectId=72845434-060f-44d4-8762-a2a10a6d091a",
+      "viewCount": 12632,
+      "remixCount": 141
+    },
+    {
+      "slug": "grunge-collage-motion",
+      "title": "Grunge Collage Motion",
+      "description": "A high-energy, distressed collage style featuring raw textures, fragmented composition, and jittery stop-motion animation. Implements the 'Grunge Collage Motion Graphics' design system with bold typography and glitch effects.",
+      "tags": ["style"],
+      "previewUrl": "https://component-f5b1aedc-bc25-489d-b56b-a8d7724f821b.preview.superdesign.dev/?projectId=98e43f8a-e117-47a1-9cf9-638c1dddb5a0",
+      "viewCount": 16982,
+      "remixCount": 197
+    },
+    {
+      "slug": "hyper-saturated-fluid",
+      "title": "Hyper-Saturated Fluid",
+      "description": "A landing page featuring a Hyper-Saturated Fluid design style. It uses a 'Cyber Yellow' primary color with organic 'liquid' sectioning, contrasting against a 'Deep Onyx' dark void. Includes glassmorphic data cards, massive typography, and pill-shaped interactive elements.",
+      "tags": ["style"],
+      "previewUrl": "https://component-847c4d03-e56e-422b-ba8e-5f5262db3e3c.preview.superdesign.dev/?projectId=79ca941b-f561-4a90-b43e-28d327e48f23",
+      "viewCount": 41879,
+      "remixCount": 563
+    },
+    {
+      "slug": "architectural-blueprint",
+      "title": "Architectural Blueprint",
+      "description": "A technical, architectural blueprint style dashboard with grid systems, measurement markers, and drafting aesthetics.",
+      "tags": ["style"],
+      "previewUrl": "https://component-b35cc7cd-d1da-48cd-9865-7445938e21bc.preview.superdesign.dev/?projectId=a1fe75e0-ba01-4dca-9403-f1faf8178671",
+      "viewCount": 9824,
+      "remixCount": 229
+    },
+    {
+      "slug": "tectonic-style",
+      "title": "Tectonic style",
+      "description": "Digital Geology & Obsidian Minimalism",
+      "tags": ["style"],
+      "previewUrl": "https://component-f4ebac8d-84d9-4774-ad43-3edd59ab29d2.preview.superdesign.dev/?projectId=1800ac0b-5501-4d66-a16f-4dc851aceeae",
+      "viewCount": 4131,
+      "remixCount": 114
+    },
+    {
+      "slug": "liquid-metal-style",
+      "title": "Liquid Metal style",
+      "description": "Liquid Chrome & Techno-Surrealism style",
+      "tags": ["style"],
+      "previewUrl": "https://component-b0029b84-61a8-4e14-bebe-6eadfe477974.preview.superdesign.dev/?projectId=29c47623-fc6-499c-a129-fb87896b0055",
+      "viewCount": 4810,
+      "remixCount": 186
+    },
+    {
+      "slug": "clay-ui",
+      "title": "Clay UI",
+      "description": "High-Fidelity Claymorphism Design System",
+      "tags": ["style"],
+      "previewUrl": "https://component-b345cb82-feca-4e68-9123-34019e1b4af8.preview.superdesign.dev/?projectId=c674ff7c-0356-4a2c-a6fd-bc1392952002",
+      "viewCount": 23630,
+      "remixCount": 252
+    },
+    {
+      "slug": "modern-bold",
+      "title": "Modern Bold",
+      "description": "Bold Typography Design System",
+      "tags": ["style"],
+      "previewUrl": "https://component-0343ef8f-fdec-4f70-9346-a0f9f32bf564.preview.superdesign.dev/?projectId=d300a3cd-6fc3-41ba-967b-41b77238307d",
+      "viewCount": 4459,
+      "remixCount": 147
+    },
+    {
+      "slug": "material",
+      "title": "Material",
+      "description": "Material Design 3",
+      "tags": ["style"],
+      "previewUrl": "https://component-40b48711-ca64-4df4-b16d-822afa655be7.preview.superdesign.dev/?projectId=4b249ef9-d4b9-46c3-a960-b37ace1d53f0",
+      "viewCount": 25234,
+      "remixCount": 171
+    },
+    {
+      "slug": "flat-design",
+      "title": "Flat design",
+      "description": "Flat Design removes all artifice",
+      "tags": ["style"],
+      "previewUrl": "https://component-7a12fa7e-c35a-4c87-85f3-0c36b75f86f0.preview.superdesign.dev/?projectId=c89a7586-80f0-4c10-bc48-5636e64a918c",
+      "viewCount": 4306,
+      "remixCount": 206
+    },
+    {
+      "slug": "swiss-style",
+      "title": "Swiss Style",
+      "description": "International Typographic Style",
+      "tags": ["style"],
+      "previewUrl": "https://component-f4ed775c-fb9a-4f20-a20d-48739cd4771a.preview.superdesign.dev/?projectId=58fa6b33-6c33-47fe-aea7-f1de245c2a68",
+      "viewCount": 4636,
+      "remixCount": 144
+    },
+    {
+      "slug": "terminal",
+      "title": "Terminal",
+      "description": "The Terminal CLI aesthetic pays homage to the raw power of the command line",
+      "tags": ["style"],
+      "previewUrl": "https://component-546e68d0-45b1-40b7-83af-30b904e590bb.preview.superdesign.dev/?projectId=c1edc6be-f31d-421e-bedc-4466cc8c5616",
+      "viewCount": 8332,
+      "remixCount": 234
+    },
+    {
+      "slug": "monochrome",
+      "title": "Monochrome",
+      "description": "Minimalist Monochrome",
+      "tags": ["style"],
+      "previewUrl": "https://component-d59bde0d-0adc-46b2-9c21-b9a774bc66bb.preview.superdesign.dev/?projectId=470b9077-d042-4b74-bd68-05ce8ffb4011",
+      "viewCount": 9280,
+      "remixCount": 166
+    },
+    {
+      "slug": "sketch",
+      "title": "Sketch",
+      "description": "The Hand-Drawn design style celebrates authentic imperfection and human touch in a digital world",
+      "tags": ["style"],
+      "previewUrl": "https://component-0a026150-e4d0-47fc-87ce-e2c20184f750.preview.superdesign.dev/?projectId=413631b7-1e07-4e57-8582-8c0bce9da88b",
+      "viewCount": 4529,
+      "remixCount": 228
+    },
+    {
+      "slug": "playful",
+      "title": "Playful",
+      "description": "Playful Geometric Design System",
+      "tags": ["style"],
+      "previewUrl": "https://component-fd90b71b-2363-4d10-99cd-28f01c51d250.preview.superdesign.dev/?projectId=cd6c1e8b-4548-4f32-8850-8f671353780c",
+      "viewCount": 5398,
+      "remixCount": 323
+    },
+    {
+      "slug": "kinetic",
+      "title": "Kinetic",
+      "description": "High-energy brutalism meets kinetic poster design",
+      "tags": ["style"],
+      "previewUrl": "https://component-076dac45-2307-4f54-8796-e70a8c831f4a.preview.superdesign.dev/?projectId=e9b91892-5934-400f-9356-e5fe80054172",
+      "viewCount": 29567,
+      "remixCount": 219
+    },
+    {
+      "slug": "bauhaus",
+      "title": "Bauhaus",
+      "description": "The Bauhaus style embodies the revolutionary principle 'form follows function' while celebrating pure geometric beauty and primary color theory",
+      "tags": ["style"],
+      "previewUrl": "https://component-2c25de26-6fc2-4b40-9717-b1d49aa9f301.preview.superdesign.dev/?projectId=69e1542e-e5e4-4289-9faa-a65fa3f6cea1",
+      "viewCount": 4586,
+      "remixCount": 182
+    },
+    {
+      "slug": "luxury",
+      "title": "Luxury",
+      "description": "Elegance through restraint, precision, and depth",
+      "tags": ["style"],
+      "previewUrl": "https://component-933ece20-e232-4db8-a681-d9a46bae8cb9.preview.superdesign.dev/?projectId=150ccb6a-09f1-428b-a43c-46e34dd0e51b",
+      "viewCount": 11441,
+      "remixCount": 176
+    },
+    {
+      "slug": "win98",
+      "title": "Win98",
+      "description": "Embrace the raw, unfiltered aesthetic of the early web",
+      "tags": ["style"],
+      "previewUrl": "https://component-31decf3b-0778-4a1d-9c3f-f9921c9bc1d3.preview.superdesign.dev/?projectId=b3a5050d-dd44-4738-b9d2-afb27980c69a",
+      "viewCount": 20353,
+      "remixCount": 173
+    },
+    {
+      "slug": "neumorphism",
+      "title": "Neumorphism",
+      "description": "Neumorphism creates the illusion of physical depth through carefully balanced dual shadows",
+      "tags": ["style"],
+      "previewUrl": "https://component-f1e80afa-87fb-4f46-b624-23f30bb291f4.preview.superdesign.dev/?projectId=5f89e132-cd45-4bf7-829b-b2e39ecffa22",
+      "viewCount": 29392,
+      "remixCount": 476
+    }
+  ],
+  "total": 60,
+  "source": "superdesign CLI --tags style --limit 100",
+  "fetched": "2026-04-21"
+}

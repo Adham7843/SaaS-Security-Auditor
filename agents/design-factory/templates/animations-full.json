@@ -1,0 +1,140 @@
+{
+  "description": "Full prompts for Superdesign animation templates",
+  "source": "superdesign CLI --slugs <slug> --json",
+  "prompts": [
+    {
+      "slug": "hyper-speed-loading-state",
+      "title": "Hyper-Speed Loading State",
+      "description": "Loading animation UI featuring a character-like loader with animated lines, a body made from geometric shapes, and moving horizontal lines across the background.",
+      "prompt": "Loading animation with geometric shapes, synchronized motion effects including rotation, translation, and opacity fades.",
+      "tags": ["animation", "loading"],
+      "previewUrl": "https://draft-76761dad-ddad-4f10-bd16-f5c71144d577.preview.superdesign.dev"
+    },
+    {
+      "slug": "force-field-background",
+      "title": "Force Field Background",
+      "description": "An interactive, particle-based force field background effect that reacts to mouse movement.",
+      "prompt": "Uses p5.js to render particles based on image brightness maps, creating a fluid, magnetic visual experience.",
+      "tags": ["animation", "background"],
+      "previewUrl": "https://component-f8ed68c7-e970-4fa3-85de-5064855eb254.preview.superdesign.dev"
+    },
+    {
+      "slug": "gooey-gradient-background",
+      "title": "Gooey Gradient Background",
+      "description": "A mesmerizing, interactive gooey liquid gradient background with animated blobs and mouse-following effect.",
+      "prompt": "Interactive liquid blobs with blur effects, perfect for immersive landing pages.",
+      "tags": ["animation", "background"],
+      "previewUrl": "https://component-bf9ebe26-912e-4b09-bb2e-ec3fa8e42874.preview.superdesign.dev"
+    },
+    {
+      "slug": "tubes-interactive-background",
+      "title": "Tubes Interactive Background",
+      "description": "A high-performance interactive 3D background featuring neon tubes that follow the cursor.",
+      "prompt": "Based on threejs-components, includes click interaction to randomize colors and hero section overlay.",
+      "tags": ["animation", "background"],
+      "previewUrl": "https://component-79f658a0-893a-4705-8427-831d1091c385.preview.superdesign.dev"
+    },
+    {
+      "slug": "parallax-stars-background",
+      "title": "Parallax Stars Background",
+      "description": "A mesmerizing space-themed background with animated parallax pixel stars and radial gradient atmosphere.",
+      "prompt": "Features three layers of stars moving at different speeds to create depth.",
+      "tags": ["background", "animation"],
+      "previewUrl": "https://component-53bf23cc-63df-4ab5-8c24-9b0a76739dbd.preview.superdesign.dev"
+    },
+    {
+      "slug": "pastel-gradient-background",
+      "title": "Pastel Gradient Background",
+      "description": "A soft, rotating pastel gradient background with blur effects and smooth animation.",
+      "tags": ["background", "animation"],
+      "previewUrl": "https://component-c4c91db6-76c4-4457-84b6-a5bfb65a32f8.preview.superdesign.dev"
+    },
+    {
+      "slug": "jelly-squish-button",
+      "title": "Jelly Squish Button",
+      "description": "A high-fidelity interactive 3D jelly simulation that responds to vertical dragging and mouse movement.",
+      "prompt": "Uses GSAP for physics-based animation and optimized image sequencing.",
+      "tags": ["animation", "ui component", "button"],
+      "previewUrl": "https://component-b0075c5b-b831-42de-a742-cea683bcd77a.preview.superdesign.dev"
+    },
+    {
+      "slug": "squares-background",
+      "title": "Squares Background",
+      "description": "An animated grid of squares background with directional movement and hover interactions.",
+      "prompt": "Customizable speed, direction, and colors with radial vignette effect.",
+      "tags": ["animation", "background"],
+      "previewUrl": "https://component-19161bfb-2fe5-4ec5-8c5b-e4486dfe7a2b.preview.superdesign.dev"
+    },
+    {
+      "slug": "letter-glitch-background",
+      "title": "Letter Glitch Background",
+      "description": "A high-end, minimalist letter glitch background effect with customizable speed, vignettes, and smooth transitions.",
+      "tags": ["animation", "background"],
+      "previewUrl": "https://component-d021fed3-2919-4ec7-95ae-9d49959ea5a8.preview.superdesign.dev"
+    },
+    {
+      "slug": "ballpit-background",
+      "title": "Ballpit Background",
+      "description": "A high-performance 3D physics-based background effect with interactive bouncing spheres.",
+      "prompt": "Features custom shader for scattering effects, Three.js instanced rendering for performance.",
+      "tags": ["animation", "background"],
+      "previewUrl": "https://component-d08056d4-7c81-4eaa-8200-291a943e0e7a.preview.superdesign.dev"
+    },
+    {
+      "slug": "grid-distortion-background",
+      "title": "Grid Distortion Background",
+      "description": "A high-performance WebGL-based grid distortion effect for background images.",
+      "prompt": "Features interactive mouse-driven liquid-like ripples.",
+      "tags": ["animation", "background"],
+      "previewUrl": "https://component-234e8189-fb87-4f30-b5f3-f741e8375f85.preview.superdesign.dev"
+    },
+    {
+      "slug": "interactive-waves-background",
+      "title": "Interactive Waves Background",
+      "description": "An interactive, wavy background effect using Perlin noise and canvas.",
+      "prompt": "Responds to mouse movement with fluid physics.",
+      "tags": ["animation", "background"],
+      "previewUrl": "https://component-98e46b8c-bf11-4d02-a1ee-0d3656be6c8a.preview.superdesign.dev"
+    },
+    {
+      "slug": "hyperspeed-background",
+      "title": "Hyperspeed Background",
+      "description": "A high-performance, Three.js-based warp speed/hyperspeed background effect.",
+      "prompt": "Customizable distortions, colors, and motion parameters. Supports multiple presets.",
+      "tags": ["animation", "background"],
+      "previewUrl": "https://component-de9cdc4c-c94d-4bdf-908a-e9adcb24dbbe.preview.superdesign.dev"
+    },
+    {
+      "slug": "faulty-terminal-background",
+      "title": "Faulty Terminal Background",
+      "description": "A CRT/Terminal-style background with glitch effects, scanlines, and digital noise.",
+      "prompt": "Highly interactive with mouse movements and page load animations.",
+      "tags": ["animation", "background"],
+      "previewUrl": "https://component-8ecf25e3-8c12-4dc3-9e7c-20ec57606fe5.preview.superdesign.dev"
+    },
+    {
+      "slug": "prismatic-burst-background",
+      "title": "Prismatic Burst Background",
+      "description": "A high-performance WebGL prismatic burst background effect.",
+      "prompt": "Built with OGL, customizable ray patterns, 3D animations, and dynamic color gradients.",
+      "tags": ["animation", "background"],
+      "previewUrl": "https://component-2336e547-8283-4cbf-8c48-f1a20b9e153d.preview.superdesign.dev"
+    },
+    {
+      "slug": "lightning-background",
+      "title": "Lightning Background",
+      "description": "A high-performance WebGL-powered lightning/electric discharge background effect.",
+      "prompt": "Features adjustable hue, intensity, speed, and scale. Built with GLSL shaders.",
+      "tags": ["animation", "background"],
+      "previewUrl": "https://component-00117e27-23c2-4a53-ab12-215ab11cb228.preview.superdesign.dev"
+    },
+    {
+      "slug": "plasma-background",
+      "title": "Plasma Background",
+      "description": "A mesmerizing, high-performance plasma background effect using OGL.",
+      "prompt": "Customizable color, speed, and mouse interaction.",
+      "tags": ["background", "animation"],
+      "previewUrl": "https://component-5125713f-d7ab-489a-ac83-67c9ab1295e7.preview.superdesign.dev"
+    }
+  ]
+}

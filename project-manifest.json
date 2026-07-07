@@ -1,0 +1,132 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "manifest_version": "1.0.0",
+  "project": "SaaS-Security-Auditor",
+  "description": "Standard deployment manifest for all Mothra-deployed projects",
+
+  "agents": {
+    "spec-designer": {
+      "source": "agents/spec-designer/",
+      "type": "opencode-agent",
+      "description": "OPSX workflow for security specs",
+      "always_deploy": true
+    },
+    "distribution-classifier": {
+      "source": "agents/distribution-classifier/",
+      "type": "opencode-agent",
+      "description": "Classify and route security findings",
+      "always_deploy": true
+    },
+    "design-factory": {
+      "source": "agents/design-factory/",
+      "type": "opencode-agent-with-skills",
+      "description": "Full design system with 60+ skills",
+      "always_deploy": true,
+      "skills": [
+        "app-initializer",
+        "mobile-app-testing",
+        "mobile-app-ui-design",
+        "mobile-app-security-testing",
+        "maestro-mobile-testing",
+        "react-native-expert",
+        "react-native-best-practices",
+        "react-native-design",
+        "react-native-architecture",
+        "vercel-react-native-skills",
+        "ckm-design",
+        "gsap-plugins",
+        "gsap-react",
+        "gsap-scrolltrigger",
+        "gsap-timeline",
+        "impeccable",
+        "motion-framer",
+        "react-spring-physics",
+        "ui-animation",
+        "ui-ux-pro-max"
+      ]
+    }
+  },
+
+  "external_tools": {
+    "website-cloner": {
+      "source": "F:\\Notes\\Projects\\Automations_Dev\\output\\saas-auto-builder\\website-cloner",
+      "type": "nextjs-project",
+      "description": "Clone competitor websites (ai-website-cloner-template)",
+      "deploy_command": "git clone / npm install",
+      "always_deploy": false
+    },
+    "business-cloner": {
+      "source": "F:\\Notes\\Projects\\Automations_Dev\\output\\saas-auto-builder",
+      "type": "python-pipeline",
+      "description": "6-stage SAAS auto-builder pipeline",
+      "always_deploy": false
+    },
+    "design-factory-source": {
+      "source": "F:\\Notes\\Second_Brain\\00_System\\00_Command_Center\\My_Systems\\Design_Factory",
+      "type": "skill-library",
+      "description": "Original Design Factory with templates and skills",
+      "always_deploy": false
+    }
+  },
+
+  "mcps": {
+    "filesystem": {
+      "type": "builtin",
+      "enabled": true,
+      "always_deploy": true
+    },
+    "websearch": {
+      "type": "builtin",
+      "enabled": true,
+      "always_deploy": true
+    },
+    "gh_grep": {
+      "type": "builtin",
+      "enabled": true,
+      "always_deploy": false
+    },
+    "playwright": {
+      "type": "node",
+      "package": "@playwright/mcp",
+      "enabled": false,
+      "always_deploy": false,
+      "install_command": "npm install -g @playwright/mcp"
+    }
+  },
+
+  "core_engine": {
+    "src/core/models.py": "Data models",
+    "src/core/engine.py": "Scan engine",
+    "src/core/fixer.py": "Fix engine",
+    "src/core/reporter.py": "Report engine",
+    "src/scanners/": "7 vulnerability scanners",
+    "src/fixers/": "Auto-fix modules",
+    "scripts/run_scan.py": "CLI scan entry point",
+    "scripts/run_fix.py": "CLI fix entry point",
+    "scripts/scan_all_brands.py": "Multi-brand scan",
+    "scripts/classify_results.py": "Classification script",
+    "scripts/distribute_findings.py": "Distribution script",
+    "scripts/init_brand.py": "Brand initialization",
+    "scripts/deploy_project.py": "Project deployment",
+    "pipelines/scan_pipeline.py": "Pipeline orchestrator",
+    "config/default.yaml": "Default config",
+    "opencode.json": "Agent registry"
+  },
+
+  "per_project_structure": [
+    "agents/",
+    "brands/_template/",
+    "brands/_template/agents/spec-designer/",
+    "scripts/",
+    "src/core/",
+    "src/scanners/",
+    "src/fixers/",
+    "pipelines/",
+    "config/",
+    "output/reports/",
+    "output/fixes/",
+    "output/distributions/",
+    "data/scans/",
+    "data/fixes/"
+  ]
+}
