@@ -62,6 +62,7 @@ python scripts/run_scan.py my-new-brand --url https://my-new-brand.com
 | `@saas-fixer` | Applies auto-fixes (cannot run scans) | Yes (stdlib) |
 | `@distribution-classifier` | Classifies & routes findings | Yes — see `agents/distribution-classifier/DELIVERY-MANIFEST.md` |
 | `@spec-designer` | Designs security remediation specs | Yes — see `agents/spec-designer/DELIVERY-MANIFEST.md` |
+| `@business-cloner` | Clone + extract full business intel from any SaaS URL | Yes — see `agents/business-cloner/AGENT.md` |
 
 ## Example Prompts
 

@@ -1,0 +1,38 @@
+# Sample Brand Configuration
+# Copy to brands/your-brand/brand.yaml and customize
+
+name: "MySaaS App"
+description: "A sample SaaS application for demo purposes"
+target_url: "https://app.mysaas.com"
+target_dir: ""                       # Optional: local source path
+severity_threshold: "low"
+timeout_seconds: 300
+
+enabled_categories:
+  - dependencies
+  - configuration
+  - authentication
+  - cors_headers
+  - secrets
+  - ssl_tls
+  - security_headers
+
+env_vars:
+  DATABASE_URL: ""
+  SECRET_KEY: ""
+  SENTRY_DSN: ""
+  STRIPE_API_KEY: ""
+
+custom_checks:
+  enabled: false
+  # scripts:
+  #   - name: "check-custom-endpoint"
+  #     command: "curl -s -o /dev/null -w '%{http_code}' https://app.mysaas.com/admin"
+
+notifications:
+  slack:
+    enabled: true
+    channel: "#security-alerts"
+  github:
+    enabled: true
+    repo: "myorg/mysaas-security"

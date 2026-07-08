@@ -32,6 +32,7 @@ Thumbs.db
 # Project
 output/reports/
 output/fixes/
+output/repo-scans/
 data/scans/
 data/fixes/
 data/reports/
@@ -39,3 +40,4 @@ data/reports/
 # Brand secrets (brands may contain .env files)
 brands/*/.env
 brands/*/.env.local
+brands/*/output/

@@ -1,0 +1,48 @@
+{
+  "scan_metadata": {
+    "brand": "{{BRAND_NAME}}",
+    "target_url": "{{TARGET_URL}}",
+    "scan_date": "{{SCAN_DATE}}",
+    "duration_seconds": {{DURATION}},
+    "scanner_version": "1.0.0"
+  },
+  "summary": {
+    "total_vulnerabilities": {{TOTAL}},
+    "by_severity": {
+      "critical": {{CRITICAL_COUNT}},
+      "high": {{HIGH_COUNT}},
+      "medium": {{MEDIUM_COUNT}},
+      "low": {{LOW_COUNT}},
+      "info": {{INFO_COUNT}}
+    },
+    "security_score": {{SCORE}},
+    "health": "{{HEALTH}}"
+  },
+  "vulnerabilities": [
+    {
+      "id": "VULN-{{ID}}",
+      "title": "{{TITLE}}",
+      "category": "{{CATEGORY}}",
+      "severity": "{{SEVERITY}}",
+      "location": "{{LOCATION}}",
+      "description": "{{DESCRIPTION}}",
+      "impact": "{{IMPACT}}",
+      "cvss_score": {{CVSS}},
+      "fix_available": {{FIX_AVAILABLE}},
+      "fix_description": "{{FIX_DESC}}",
+      "status": "{{STATUS}}"
+    }
+  ],
+  "fixes_applied": [
+    {
+      "vulnerability_id": "VULN-{{ID}}",
+      "fix_type": "{{FIX_TYPE}}",
+      "success": {{SUCCESS}},
+      "details": "{{DETAILS}}"
+    }
+  ],
+  "recommendations": [
+    "{{RECOMMENDATION_1}}",
+    "{{RECOMMENDATION_2}}"
+  ]
+}

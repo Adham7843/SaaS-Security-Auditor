@@ -1,0 +1,50 @@
+[
+  {
+    "label": "SaaS Security Auditor (MAIN)",
+    "command": "pwsh -NoExit -Command \"cd 'F:\\Notes\\Projects\\SAAS_Businesses\\SaaS-Security-Auditor'; opencode --agent saas-security-auditor\"",
+    "spawn": "local",
+    "use_new_terminal": true
+  },
+  {
+    "label": "Scanner — Run security scan",
+    "command": "pwsh -NoExit -Command \"cd 'F:\\Notes\\Projects\\SAAS_Businesses\\SaaS-Security-Auditor'; opencode --agent saas-scanner\"",
+    "spawn": "local",
+    "use_new_terminal": true
+  },
+  {
+    "label": "Fixer — Auto-fix vulnerabilities",
+    "command": "pwsh -NoExit -Command \"cd 'F:\\Notes\\Projects\\SAAS_Businesses\\SaaS-Security-Auditor'; opencode --agent saas-fixer\"",
+    "spawn": "local",
+    "use_new_terminal": true
+  },
+  {
+    "label": "Distribution Classifier — Route findings",
+    "command": "pwsh -NoExit -Command \"cd 'F:\\Notes\\Projects\\SAAS_Businesses\\SaaS-Security-Auditor'; opencode --agent distribution-classifier\"",
+    "spawn": "local",
+    "use_new_terminal": true
+  },
+  {
+    "label": "Spec Designer — Design remediation specs",
+    "command": "pwsh -NoExit -Command \"cd 'F:\\Notes\\Projects\\SAAS_Businesses\\SaaS-Security-Auditor'; opencode --agent spec-designer\"",
+    "spawn": "local",
+    "use_new_terminal": true
+  },
+  {
+    "label": "Design Factory — Full design system",
+    "command": "pwsh -NoExit -Command \"cd 'F:\\Notes\\Projects\\SAAS_Businesses\\SaaS-Security-Auditor'; opencode --agent design-factory\"",
+    "spawn": "local",
+    "use_new_terminal": true
+  },
+  {
+    "label": "Business Cloner — Clone + extract SaaS intel",
+    "command": "pwsh -NoExit -Command \"cd 'F:\\Notes\\Projects\\SAAS_Businesses\\SaaS-Security-Auditor'; opencode --agent business-cloner\"",
+    "spawn": "local",
+    "use_new_terminal": true
+  },
+  {
+    "label": "Repo Scanner — Analyze any GitHub repo",
+    "command": "pwsh -NoExit -Command \"cd 'F:\\Notes\\Projects\\SAAS_Businesses\\SaaS-Security-Auditor'; opencode --agent repo-scanner\"",
+    "spawn": "local",
+    "use_new_terminal": true
+  }
+]

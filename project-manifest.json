@@ -113,10 +113,44 @@
     "opencode.json": "Agent registry"
   },
 
+  "references": {
+    "website-cloner": {"source": "references/website-cloner.md", "type": "reference"},
+    "business-cloner": {"source": "references/business-cloner.md", "type": "reference"},
+    "repo-scanner": {"source": "references/repo-scanner.md", "type": "reference"},
+    "mothra-harnesses": {"source": "references/mothra-harnesses.md", "type": "reference"},
+    "distribution-classifier-factory": {"source": "references/distribution-classifier-factory.md", "type": "reference"},
+    "design-factory": {"source": "references/design-factory.md", "type": "reference"}
+  },
+
+  "templates": {
+    "reports": "templates/reports/",
+    "config": "templates/config/",
+    "notifications": "templates/notifications/"
+  },
+
+  "docs": {
+    "usage": "docs/USAGE.md",
+    "scanners": "docs/SCANNERS.md",
+    "brands": "docs/BRANDS.md",
+    "architecture": "docs/ARCHITECTURE.md"
+  },
+
+  "examples": {
+    "sample-brand-config": "examples/sample-brand-config.yaml",
+    "sample-scan-result": "examples/sample-scan-result.json",
+    "sample-report": "examples/sample-report.md"
+  },
+
   "per_project_structure": [
     "agents/",
     "brands/_template/",
     "brands/_template/agents/spec-designer/",
+    "references/",
+    "templates/reports/",
+    "templates/config/",
+    "templates/notifications/",
+    "docs/",
+    "examples/",
     "scripts/",
     "src/core/",
     "src/scanners/",

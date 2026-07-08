@@ -1,0 +1,44 @@
+# Scan Configuration Template
+# Copy to config/ and customize per brand
+
+# Target
+target_url: "https://app.example.com"
+target_dir: ""                 # Optional: path to source code for static analysis
+
+# Thresholds
+severity_threshold: "low"      # critical, high, medium, low, info
+timeout_seconds: 300
+
+# Categories to scan
+enabled_categories:
+  - dependencies                # Scan for known vulnerable dependencies
+  - configuration              # Check for misconfigurations (DEBUG, etc.)
+  - authentication             # Test auth endpoints
+  - cors_headers               # Check CORS and security headers
+  - secrets                    # Scan for hardcoded secrets
+  - ssl_tls                    # Check SSL/TLS configuration
+
+# Scanner settings
+scanner:
+  max_redirects: 5
+  follow_redirects: true
+  user_agent: "SaaS-Security-Auditor/1.0"
+  headers:                     # Custom headers for scanning
+    Authorization: ""
+    Cookie: ""
+
+# Notifications
+notifications:
+  slack:
+    enabled: false
+    webhook_url: ""
+  github:
+    enabled: false
+    repo: ""
+    token_env_var: "GH_TOKEN"
+
+# Fix engine
+fix_engine:
+  auto_fix: false              # Set to true to auto-apply fixes
+  backup_before_fix: true
+  fix_timeout: 60

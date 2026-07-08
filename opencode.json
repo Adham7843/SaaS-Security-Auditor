@@ -1,12 +1,11 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "schema_version": "1.0.0",
-  "agents": {
+  "agent": {
     "saas-security-auditor": {
       "model": "opencode/deepseek-v4-flash-free",
       "variant": "high",
-      "system_prompt": "{file:./AGENT.md}",
-      "permissions": {
+      "prompt": "{file:./AGENT.md}",
+      "permission": {
         "read": {
           "*": "allow",
           "brands/*/.env": "deny"
@@ -29,24 +28,21 @@
         "glob": {
           "*": "allow"
         },
-        "webfetch": {
-          "*": "allow"
-        },
+        "webfetch": "allow",
         "doom_loop": "ask"
       },
-      "mcps": [
+      "mcp": [
         "filesystem",
         "websearch",
         "gh_grep"
       ],
-      "skills": [],
       "description": "SaaS Security Auditor — scans brands for vulnerabilities and applies automated fixes"
     },
     "saas-scanner": {
       "model": "opencode/deepseek-v4-flash-free",
       "variant": "medium",
-      "system_prompt": "You run security scans on SaaS brands. Use python scripts/run_scan.py to scan a brand.",
-      "permissions": {
+      "prompt": "You run security scans on SaaS brands. Use python scripts/run_scan.py to scan a brand.",
+      "permission": {
         "bash": {
           "python scripts/run_scan*": "allow",
           "*": "deny"
@@ -60,15 +56,14 @@
           "*": "deny"
         }
       },
-      "mcps": [],
       "hidden": true,
       "description": "Scanner sub-agent — runs scans only"
     },
     "saas-fixer": {
       "model": "opencode/deepseek-v4-flash-free",
       "variant": "medium",
-      "system_prompt": "You apply automated fixes to vulnerabilities found by scans. Use python scripts/run_fix.py to apply fixes.",
-      "permissions": {
+      "prompt": "You apply automated fixes to vulnerabilities found by scans. Use python scripts/run_fix.py to apply fixes.",
+      "permission": {
         "bash": {
           "python scripts/run_fix*": "allow",
           "*": "deny"
@@ -82,15 +77,14 @@
           "*": "deny"
         }
       },
-      "mcps": [],
       "hidden": true,
       "description": "Fixer sub-agent — applies auto-fixes"
     },
     "distribution-classifier": {
       "model": "opencode/deepseek-v4-flash-free",
       "variant": "medium",
-      "system_prompt": "{file:./agents/distribution-classifier/AGENT.md}",
-      "permissions": {
+      "prompt": "{file:./agents/distribution-classifier/AGENT.md}",
+      "permission": {
         "read": { "*": "allow" },
         "edit": { "output/reports/*": "allow" },
         "bash": {
@@ -102,15 +96,14 @@
         "glob": { "*": "allow" },
         "doom_loop": "deny"
       },
-      "mcps": ["filesystem"],
+      "mcp": ["filesystem"],
       "description": "Distribution Classifier — classify and route security findings"
     },
     "spec-designer": {
       "model": "opencode/deepseek-v4-flash-free",
       "variant": "high",
-      "system_prompt": "{file:./agents/spec-designer/AGENT.md}",
-      "fallback_chain": ["opencode/gpt-5-nano"],
-      "permissions": {
+      "prompt": "{file:./agents/spec-designer/AGENT.md}",
+      "permission": {
         "read": {
           "brands/*": "allow",
           "output/reports/*": "allow",
@@ -133,15 +126,14 @@
         "glob": { "brands/*": "allow", "src/*": "allow", "*": "deny" },
         "doom_loop": "ask"
       },
-      "mcps": ["filesystem", "websearch"],
-      "skills": [],
+      "mcp": ["filesystem", "websearch"],
       "description": "Spec Designer — turn security findings into structured specs and tasks"
     },
     "design-factory": {
       "model": "opencode/deepseek-v4-flash-free",
       "variant": "high",
-      "system_prompt": "{file:./agents/design-factory/AGENT.md}",
-      "permissions": {
+      "prompt": "{file:./agents/design-factory/AGENT.md}",
+      "permission": {
         "read": { "*": "allow" },
         "edit": { "brands/*": "allow", "agents/design-factory/*": "allow" },
         "write": { "brands/*/docs/*": "allow", "brands/*/DESIGN.md": "allow" },
@@ -151,7 +143,7 @@
         "skill": { "*": "allow" },
         "doom_loop": "ask"
       },
-      "skills": {
+      "skill": {
         "sources": [
           { "path": "./agents/design-factory/.opencode/skills", "recursive": true }
         ],
@@ -167,26 +159,78 @@
           "modern-web-design", "animate"
         ]
       },
-      "mcps": ["filesystem", "websearch"],
+      "mcp": ["filesystem", "websearch"],
       "description": "Design Factory — senior web designer with 60+ skills",
       "color": "#9B59B6"
-    }
-  },
-  "mcps": {
-    "filesystem": {
-      "type": "builtin",
-      "enabled": true,
-      "description": "Read and write files in the project"
     },
-    "websearch": {
-      "type": "builtin",
-      "enabled": true,
-      "description": "Search the web for CVE details and security advisories"
+    "business-cloner": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "variant": "high",
+      "prompt": "{file:./agents/business-cloner/AGENT.md}",
+      "permission": {
+        "read": {
+          "brands/*": "allow",
+          "output/*": "allow",
+          "*.py": "allow",
+          "*.md": "allow",
+          "*.json": "allow",
+          "*.yaml": "allow",
+          "F:/Notes/Second_Brain/**": "allow",
+          "F:/Notes/Tools/**": "allow",
+          "*": "deny"
+        },
+        "edit": {
+          "brands/*": "allow",
+          "output/*": "allow",
+          "*": "deny"
+        },
+        "bash": {
+          "python pipeline.py *": "allow",
+          "pip install *": "ask",
+          "npm install *": "ask",
+          "playwright install *": "ask",
+          "npx stackmd *": "allow",
+          "mkdir *": "allow",
+          "*": "deny"
+        },
+        "grep": "allow",
+        "glob": "allow",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "question": "allow",
+        "task": "allow",
+        "external_directory": {
+          "F:/Notes/Second_Brain/**": "allow",
+          "F:/Notes/Tools/**": "allow",
+          "*": "ask"
+        },
+        "doom_loop": "ask"
+      },
+      "mcp": ["filesystem", "websearch"],
+      "description": "Business Cloner — clone and extract full business intelligence from any SaaS website"
     },
-    "gh_grep": {
-      "type": "builtin",
-      "enabled": true,
-      "description": "Search GitHub for known vulnerability patterns"
+    "repo-scanner": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "variant": "medium",
+      "prompt": "{file:./agents/repo-scanner/AGENT.md}",
+      "permission": {
+        "read": "allow",
+        "bash": {
+          "python F:/Notes/Projects/Automations_Dev/agents/repo-scanner/pipeline.py *": "allow",
+          "git clone *": "allow",
+          "*": "deny"
+        },
+        "edit": {
+          "output/*": "allow",
+          "*": "deny"
+        },
+        "glob": "allow",
+        "grep": "allow",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "external_directory": "allow"
+      },
+      "description": "Repo Scanner — fetch + analyze any GitHub/npm/PyPI repo with knowledge graph + AI"
     }
   }
 }

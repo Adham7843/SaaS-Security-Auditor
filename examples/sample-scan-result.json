@@ -1,0 +1,95 @@
+{
+  "scan_metadata": {
+    "brand": "MySaaS App",
+    "target_url": "https://app.mysaas.com",
+    "scan_date": "2026-07-08T12:00:00Z",
+    "duration_seconds": 45.2,
+    "scanner_version": "1.0.0"
+  },
+  "summary": {
+    "total_vulnerabilities": 5,
+    "by_severity": {
+      "critical": 1,
+      "high": 2,
+      "medium": 1,
+      "low": 1,
+      "info": 0
+    },
+    "security_score": 72,
+    "health": "MODERATE"
+  },
+  "vulnerabilities": [
+    {
+      "id": "VULN-001",
+      "title": "DEBUG mode enabled in production",
+      "category": "configuration",
+      "severity": "HIGH",
+      "location": "https://app.mysaas.com/.env",
+      "description": "Application is running with DEBUG=True in production environment, exposing sensitive configuration details via error pages.",
+      "impact": "Full environment variable disclosure, potential RCE via debug console",
+      "cvss_score": 7.5,
+      "fix_available": true,
+      "fix_description": "Set DEBUG=False in production settings and verify with environment variable override",
+      "status": "open"
+    },
+    {
+      "id": "VULN-002",
+      "title": "CORS allows all origins",
+      "category": "cors_headers",
+      "severity": "HIGH",
+      "location": "Response header: Access-Control-Allow-Origin: *",
+      "description": "CORS policy permits requests from any origin, enabling cross-origin data theft.",
+      "impact": "Data exfiltration, CSRF-style attacks from any domain",
+      "cvss_score": 7.1,
+      "fix_available": true,
+      "fix_description": "Restrict Access-Control-Allow-Origin to specific trusted domains",
+      "status": "open"
+    },
+    {
+      "id": "VULN-003",
+      "title": "Hardcoded AWS secret key in source code",
+      "category": "secrets",
+      "severity": "CRITICAL",
+      "location": "src/config.py:15",
+      "description": "AWS_SECRET_ACCESS_KEY is hardcoded in source file config.py.",
+      "impact": "Full AWS account compromise if repository is exposed",
+      "cvss_score": 9.8,
+      "fix_available": true,
+      "fix_description": "Move to environment variables and rotate the compromised key",
+      "status": "open"
+    },
+    {
+      "id": "VULN-004",
+      "title": "Missing HSTS header",
+      "category": "security_headers",
+      "severity": "MEDIUM",
+      "location": "Response headers",
+      "description": "HTTP Strict-Transport-Security header is not set on HTTPS responses.",
+      "impact": "SSL stripping attacks, downgrade attacks",
+      "cvss_score": 5.3,
+      "fix_available": true,
+      "fix_description": "Add Strict-Transport-Security header with max-age=31536000",
+      "status": "open"
+    },
+    {
+      "id": "VULN-005",
+      "title": "Outdated jQuery version (3.4.1)",
+      "category": "dependencies",
+      "severity": "LOW",
+      "location": "https://app.mysaas.com/static/js/jquery-3.4.1.min.js",
+      "description": "jQuery 3.4.1 has known XSS vulnerabilities. Latest version is 3.7.1.",
+      "impact": "Potential XSS via jQuery methods if user input reaches them",
+      "cvss_score": 4.3,
+      "fix_available": false,
+      "fix_description": "Update to jQuery 3.7.1 or later",
+      "status": "open"
+    }
+  ],
+  "recommendations": [
+    "Rotate the exposed AWS key immediately",
+    "Set DEBUG=False in production",
+    "Configure restricted CORS policy",
+    "Enable HSTS for all HTTPS responses",
+    "Update jQuery and other outdated dependencies"
+  ]
+}

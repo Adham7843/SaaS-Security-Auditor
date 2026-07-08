@@ -1,0 +1,47 @@
+{
+  "blocks": [
+    {
+      "type": "header",
+      "text": {
+        "type": "plain_text",
+        "text": ":warning: {{SEVERITY}} Vulnerability: {{VULN_TITLE}}"
+      }
+    },
+    {
+      "type": "section",
+      "fields": [
+        {"type": "mrkdwn", "text": "*Brand:*\n{{BRAND_NAME}}"},
+        {"type": "mrkdwn", "text": "*Target:*\n{{TARGET_URL}}"},
+        {"type": "mrkdwn", "text": "*Severity:*\n{{SEVERITY}}"},
+        {"type": "mrkdwn", "text": "*CVSS:*\n{{CVSS}}/10"}
+      ]
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*Description:*\n{{DESCRIPTION}}"
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*Location:* `{{LOCATION}}`"
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*Recommended Fix:*\n{{FIX_DESCRIPTION}}"
+      }
+    },
+    {
+      "type": "context",
+      "elements": [
+        {"type": "mrkdwn", "text": "Automated report from SaaS-Security-Auditor | Scan: {{SCAN_DATE}}"}
+      ]
+    }
+  ]
+}

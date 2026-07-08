@@ -38,9 +38,101 @@ This manifest defines the standard deployment kit: agents, tools, MCPs, skills, 
 
 | Config | Purpose |
 |--------|---------|
-| `opencode.json` | Master agent registry |
+| `opencode.json` | Master agent registry (see format rules below) |
+| `.zed/tasks.json` | Zed editor tasks — one-click agent launch |
 | `config/default.yaml` | Global defaults |
 | `.env.example` | Environment variables template |
+
+### `opencode.json` — FORMAT RULES (NON-NEGOTIABLE)
+
+**These are hard rules. Violating any of them causes "Configuration is invalid" errors.**
+
+#### Top-level keys
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": { ... }
+}
+```
+
+- ✅ `"agent"` — SINGULAR. NEVER `"agents"`.
+- ✅ `"$schema"` — optional but recommended.
+- ❌ NO `"schema_version"` — this key is unrecognized.
+- ❌ NO `"mcps"` or `"mcp"` at root level. MCPs go inside each agent.
+
+#### Agent entry structure
+
+```json
+"agent-name": {
+  "model": "opencode/deepseek-v4-flash-free",
+  "variant": "high",
+  "prompt": "{file:./path/to/AGENT.md}",
+  "description": "What this agent does",
+  "permission": { ... },
+  "mcp": ["filesystem", "websearch"]
+}
+```
+
+- ✅ `"prompt"` — NEVER `"system_prompt"`.
+- ✅ `"permission"` — SINGULAR. NEVER `"permissions"`.
+- ✅ `"mcp"` — SINGULAR array. NEVER `"mcps"`.
+- ✅ `"hidden": true` — for sub-agents that shouldn't appear in the @ menu.
+- ✅ `"mode": "primary"` — for main agents (optional).
+- ✅ `"variant"` — `"low"`, `"medium"`, `"high"`, `"max"` for reasoning effort.
+
+#### Permission rules — CRITICAL
+
+**Only these 3 permissions support granular object rules (`{"pattern": "allow"}`):**
+- `bash`
+- `read`
+- `edit`
+
+**ALL other permissions MUST be simple strings (`"allow"` or `"deny"`):**
+- `webfetch`, `websearch`, `grep`, `glob`, `question`, `task`, `skill`, `todowrite`, `lsp`, `doom_loop`, `external_directory`
+
+```json
+// CORRECT
+"permission": {
+  "read": { "*.py": "allow", "*": "deny" },
+  "bash": { "python *": "allow", "*": "deny" },
+  "webfetch": "allow",
+  "websearch": "allow",
+  "grep": "allow",
+  "glob": "allow"
+}
+
+// WRONG — will fail validation
+"permission": {
+  "webfetch": { "*": "allow" },    // ❌ must be "allow"
+  "websearch": { "*": "allow" },   // ❌ must be "allow"
+  "question": { "*": "allow" }     // ❌ must be "allow"
+}
+```
+
+### `.zed/tasks.json` Template
+
+Every project gets a `tasks.json` in `.zed/` with one task per registered agent. Format:
+
+```json
+[
+  {
+    "label": "Agent Name — Description",
+    "command": "pwsh -NoExit -Command \"cd '<PROJECT_DIR>'; opencode --agent <agent-name>\"",
+    "spawn": "local",
+    "use_new_terminal": true
+  }
+]
+```
+
+**Rules:**
+- Array format (NOT `{"tasks": [...]}`  — that's VS Code, not Zed)
+- `spawn: "local"` and `use_new_terminal: true` REQUIRED
+- `pwsh -NoExit -Command` so the terminal stays open after agent exits
+- Paths use escaped backslashes: `F:\\Notes\\Projects\\...`
+- NO `--model` flag — agent's opencode.json already specifies it
+- NO `--dangerously-skip-permissions` — agent's opencode.json handles permissions
+- One task entry per agent in the registry
 
 ## Agent Registry (opencode.json)
 
@@ -52,7 +144,8 @@ Every new project's `opencode.json` registers:
 4. `distribution-classifier` — Classify + route findings
 5. `spec-designer` — Security spec design (OPSX)
 6. `design-factory` — Full design system (brand, UX, animation, 3D)
-7. `brand-spec-designer` — Per-brand scoped spec designer (hidden)
+7. `business-cloner` — Clone + extract full business intel from any SaaS URL
+8. `brand-spec-designer` — Per-brand scoped spec designer (hidden)
 
 ---
 
@@ -75,6 +168,8 @@ project-root/
 ├── config/                      ← Config files
 ├── output/                      ← Reports & artifacts
 ├── opencode.json                ← Agent registry
+├── .zed/
+│   └── tasks.json              ← Zed tasks: one-click agent launch
 ├── PROJECTOR.md                 ← This manifest
 └── project-manifest.json        ← Machine-readable version
 ```
